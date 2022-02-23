@@ -20,14 +20,14 @@
       background-color: hsl(0, 0%, 100%);
       width: 200px;
       height: 300px;
-      display: flex;
+      display: table;
       margin: auto;
       position: absolute;
       top:0;
       bottom: 0;
       left: 0;
       right: 0;
-      padding: 10px;
+      padding: 4px;
       border-radius: 10px;
       justify-content: center;
       flex-direction: column;
@@ -53,7 +53,13 @@
       text-align: center;
       font-family: outfit, sans-serif;
       color: rgba(47, 47, 53, 1);
+    }
 
+    @media screen and (min-width: 800px) and (min-height: 800px){
+        .main, .image{
+            width: 100%;
+            height: 150%;
+        }
     }
     
   </style>
