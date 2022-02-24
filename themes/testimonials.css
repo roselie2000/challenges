@@ -1,0 +1,123 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+body{
+    font-family: Barlow Semi Condensed, sans-serif;
+    background-color: hsl(210, 46%, 95%);
+}
+
+:root{
+    --main-font: "Barlow Semi Condensed", sans-serif;
+    --moderate-violet: hsl(263, 55%, 52%);
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(0, 0%, 81%); 
+    --light-grayish-blue: hsl(210, 46%, 95%); 
+    --btn-box-shadow: 5px 10px 20px hsl(245, 75%, 90%);
+}
+
+body{
+    min-height: 100vh;
+}
+
+.grid-container { 
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 289px 280px;
+    gap: 25px;
+    padding: 20px;
+    width: 75%;
+    margin: auto;
+    height: 75%;
+} 
+
+.grid-container > div{
+    text-align: left;
+    padding: 20px;
+    position: relative;
+    font-size: 13px;
+}
+
+.first_main_container{
+    grid-column: 1/ span 2;
+    background-image: url("../images/bg-pattern-quotation.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: var(--moderate-violet);
+    display: inline-block;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.first_small_container{
+    background-color: var(--very-dark-grayish-blue);
+    border-radius: 8px;
+}
+
+.second_small_container{
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: var(--btn-box-shadow);
+}
+
+.second_main_container{
+    grid-column: 2/ span 2;
+    background-color: var(--very-dark-blackish-blue);
+    border-radius: 8px;
+}
+
+.side_container{
+    grid-row: span 2;
+    border-radius: 8px;
+    background-color: var(--white);
+    box-shadow: var(--btn-box-shadow);
+}
+
+/* image */
+
+img{
+    border-radius: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 7px;
+    float: left;
+    width: 50px;
+    height: 50px;
+}
+
+.profile_name{
+    padding: 5px;
+    padding-left: 20px;
+}
+
+#name{
+    font-size: 12px;
+    color: var(--light-gray);
+}
+
+span{
+    color: var(--light-grayish-blue);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+#big{
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--light-grayish-blue);
+}
+
+.content{
+    justify-content: left;
+    font-size: 13px;
+    font-family: var(--main-font);
+    color: var(--light-gray);
+
+}
+
+#black{
+    color: rgb(63, 62, 62);
+}
+
+
+
