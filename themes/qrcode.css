@@ -1,0 +1,66 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+body{
+  background-color: hsl(215, 66%, 91%);
+  min-height: 100vh;
+  background-size: contain;
+  overflow-y: scroll;
+}
+.main{
+  background-color: hsl(0, 0%, 100%);
+  position: relative;
+  width: 90%;
+  max-width: 28.3rem;
+  height: 100vh;
+  max-height: 44rem;
+  margin: 0 auto;
+  display: table;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  justify-content: center;
+  align-content: center;
+  border-radius: 25px;
+  flex-direction: column;
+  text-align: center;
+  overflow: hidden;
+  -webkit-box-shadow: var(--container-box-shadow);
+  -moz-box-shadow: var(--contaner-box-shadow);
+  box-shadow: var(--container-box-shadow);
+}
+.image{
+    width: 100%;
+    height: 60%;
+    padding-top: 10px;
+}
+.image img{
+  width: 90%;
+  height: 100%;
+  border-radius: 20px;
+  padding: 10px;
+  padding-top: 10px;
+}
+
+.second{
+  font-family: outfit, sans-serif; 
+  font-size: 16px; 
+  text-align: center;
+  font-weight: 400;
+  color: rgba(161, 154, 148,1);
+  filter: blur(0.8px);
+}
+
+.first{
+  /* font-size: 15px; */
+  font-weight: 700;
+  text-align: center;
+  font-family: outfit, sans-serif;
+  color: rgb(56, 56, 63);
+  font-size: 30px;
+}
+
+@media screen and (min-width: 800px) and (min-height: 800px){
+    .main, .image{
+        width: 100%;
+        height: 150%;
+    }
+}
