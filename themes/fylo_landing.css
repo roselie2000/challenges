@@ -80,6 +80,16 @@ nav li{
     background-color: rgba(248,248,254,255);
 }
 
+.second a{
+    color: var(--Bright-Blue);
+    text-decoration: underline;
+    padding: 10px;
+}
+
+.second a:hover{
+    filter: saturate(50%);
+}
+
 .container{
     width: 250px;
     height: 180px;
