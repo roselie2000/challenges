@@ -46,7 +46,7 @@ nav li{
     height: 600px;
     padding-left: 80px;
     margin-top: 80px;
-    background-image: url(images/bg-curve-desktop.svg);
+    background-image: url(../images/bg-curve-desktop.svg);
     background-position: bottom;
     background-repeat: no-repeat;
     color: rgb(37, 34, 34);
