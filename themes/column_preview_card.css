@@ -1,0 +1,90 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(0, 0%, 95%);
+}
+.row{
+    width: 65%;
+    height: 500px;
+    margin: auto;
+    margin-top: 100px;
+}
+  
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 25px;
+    height: 400px;
+}
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+header{
+    padding: 10px;
+}
+
+h2{
+    padding-left: 10px;
+    color: hsl(0, 0%, 95%);
+    font-weight: 800;
+}
+
+p{
+    margin-left: 10px;
+    padding-top: 17px;
+    font-family: Big Shoulders Display, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+button{
+    background-color: hsl(0, 0%, 95%);
+    font-weight: 400;
+    margin-left: 10px;
+    margin-top: 15px;
+    border: 0px;
+    border-radius: 20px;
+    width: 150px;
+    height: 35px;
+}
+
+#btn1{
+    color: hsl(31, 77%, 52%);
+}
+
+#btn1:hover{
+    color: hsla(0, 0%, 100%, 0.75);
+    background-color: hsl(31, 77%, 52%);
+    border: 2px solid hsla(0, 0%, 100%, 0.75);
+}
+
+#btn2{
+    color: hsl(184, 100%, 22%);
+}
+
+#btn2:hover{
+    color: hsla(0, 0%, 100%, 0.75);
+    background-color: hsl(184, 100%, 22%);
+    border: 2px solid hsla(0, 0%, 100%, 0.75);
+}
+
+#btn3{
+    color: hsl(179, 100%, 13%);
+}
+
+#btn3:hover{
+    color: hsla(0, 0%, 100%, 0.75);
+    background-color: hsl(179, 100%, 13%);
+    border: 2px solid hsla(0, 0%, 100%, 0.75);
+}
+
+
