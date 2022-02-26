@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+  <link rel="stylesheet" href="../themes/fylo_storange.css">
+  <link rel="stylesheet" href="(https://fonts.google.com/specimen/Raleway">
+  <link rel="stylesheet" href="(https://fonts.google.com/specimen/Ranga">
+  
+  <title>Frontend Mentor | Fylo data storage component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  
+  <div class="container">
+    <div class="first_container">
+      <div class="logo_container">
+        <img src="../images/logo1.svg" style="padding-left: 20px; padding-top: 40px; padding-bottom: 20px;">
+
+        <div class="grid-container">
+          <div class="item1"><img src="../images/icon-document.svg"></div>
+          <div class="item2"><img src="../images/icon-folder.svg"></div>
+          <div class="item3"><img src="../images/icon-upload.svg"></div>  
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="second_container">
+      <div class="box triangle"><span 
+        style="font-size: 25px; font-variant-numeric: oldstyle-nums; font-weight: 700;">185</span> GB Left</div> 
+      <div class="gauage_container">
+        <p>You’ve used <span style="color: hsl(243, 100%, 93%); font-variant-numeric: oldstyle-nums;">815 GB</span> of your storage</p>    
+        <meter id="data_guage" min="0" max="1000" value="815"></meter>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
