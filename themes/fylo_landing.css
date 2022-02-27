@@ -72,6 +72,11 @@ nav li{
     font-weight: 200;
 }
 
+.first input[type=email]:focus, .access_container input[type=email]:focus{
+    outline: none;
+    border: 1px solid rgb(173, 33, 33);
+}
+
 .second{
     width: 100%;
     height: 600px;
