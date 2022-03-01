@@ -1,0 +1,112 @@
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    *{
+      margin: 0px;
+      padding: 0px;
+    }
+
+    body{
+      background-image: url(../images/bg-desktop.svg);
+      background-repeat: no-repeat;
+      background-color:  hsl(257, 40%, 49%);
+      overflow-x: hidden;
+    }
+
+    header{
+      margin-top: 20px;
+      margin-left: 50px;
+      margin-bottom: 30px;
+    }
+
+    main{
+      margin-top: 20px;
+      margin-left: 30px;
+    }
+
+    table{
+      float: center;
+    }
+
+    #pic{
+      padding-left: 50px;
+      padding-top: 10px;
+    }
+
+    #content{
+      padding-left: 50px;
+      padding-top: 10px;
+      width: 500px;
+    }
+
+    h1{
+      font-size: 40px;
+      margin-bottom: 30px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 1);
+    }
+
+    p{
+      font-size: 15px;
+      line-height: 20px;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 1);
+    }
+
+    input{
+      width: 150px;
+      height: 40px;
+      border-radius: 20px;
+      border: 0px;
+      float: center;
+      margin-top: 25px;
+      margin-left: 20px;
+      margin-bottom: 100px;
+      padding: 5px;
+      color: hsl(257, 40%, 49%);
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
+      /* background-color: hsl(300, 69%, 71%); */
+    }
+
+.fa {
+  padding: 8px;
+  font-size: 15px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.fa-facebook {
+  color: white;
+}
+
+.fa-twitter {
+  color: white;
+}
+
+.fa-instagram {
+  color: white;
+}
+
+.fa:hover{
+  border-color: hsl(300, 69%, 71%);
+  color: hsl(300, 69%, 71%);
+}
+
+input:hover{
+  background-color: hsl(300, 69%, 71%);
+  color: rgba(255, 255, 255, 1);
+}
+
+
+footer{
+  text-align: right;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  padding-right: 50px;
+}
