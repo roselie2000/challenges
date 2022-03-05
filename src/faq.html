@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon-32x32.png"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.google.com/specimen/Kumbh+Sans"
+    />
+
+    <link rel="stylesheet" href="../themes/faq.css" />
+
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <img
+      src="../images/illustration-box-desktop.svg"
+      id="box"
+      width="150"
+      height="150"
+    />
+    <div class="main">
+      <img
+        src="../images/illustration-woman-online-desktop.svg"
+        height="350px"
+        width="400px"
+      />
+      <div class="faq">
+        <h1>FAQ</h1>
+        <p class="Questions" id="Q1" onclick="Onclick('A1', 'arr1', 'Q1');">
+          How many team members can I invite?
+          <span>
+            <img src="../images/icon-arrow-down.svg" alt="arrow" id="arr1" />
+          </span>
+        </p>
+        <p class="Answer" id="A1">
+          You can invite up to 2 additional users on the Free plan. There is no
+          limit on team members for the Premium plan.
+        </p>
+        <hr />
+
+        <p class="Questions" id="Q2" onclick="Onclick('A2', 'arr2', 'Q2');">
+          What is the maximum file upload size?
+          <span>
+            <img src="../images/icon-arrow-down.svg" alt="arrow" id="arr2" />
+          </span>
+        </p>
+        <p class="Answer" id="A2">
+          No more than 2GB. All files in your account must fit your allotted
+          storage space.
+        </p>
+        <hr />
+
+        <p class="Questions" id="Q3" onclick="Onclick('A3', 'arr3', 'Q3');">
+          How do I reset my password?
+          <span>
+            <img src="../images/icon-arrow-down.svg" alt="arrow" id="arr3" />
+          </span>
+        </p>
+        <p class="Answer" id="A3">
+          Click “Forgot password” from the login page or “Change password” from
+          your profile page. A reset link will be emailed to you.
+        </p>
+        <hr />
+
+        <p class="Questions" id="Q4" onclick="Onclick('A4', 'arr4', 'Q4');">
+          Can I cancel my subscription?
+          <span>
+            <img src="../images/icon-arrow-down.svg" alt="arrow" id="arr4" />
+          </span>
+        </p>
+        <p class="Answer" id="A4">
+          Yes! Send us a message and we’ll process your request no questions
+          asked.
+        </p>
+        <hr />
+
+        <p class="Questions" id="Q5" onclick="Onclick('A5', 'arr5', 'Q5');">
+          Do you provide additional support?
+          <span>
+            <img src="../images/icon-arrow-down.svg" alt="arrow" id="arr5" />
+          </span>
+        </p>
+        <p class="Answer" id="A5">
+          Chat and email support is available 24/7. Phone lines are open during
+          normal business hours.
+        </p>
+        <hr />
+      </div>
+    </div>
+
+    <script>
+      var flag = true;
+      var element;
+      function Onclick(elementID, ArrID, qID) {
+        element = document.getElementById(elementID);
+        let arrow = document.getElementById(ArrID);
+        arrow.classList.toggle("rotating");
+        document.getElementById(qID).classList.toggle("active_font");
+
+        if (flag) {
+          show();
+          // arrow.style.transform = "rotate(180deg)";
+        } else {
+          // arrow.style.transform = "rotate(180deg)";
+          hide();
+        }
+      }
+
+      function show() {
+        element.style.display = "block";
+        // arrow.style.transform = "rotate(180deg)";
+        flag = false;
+      }
+
+      function hide() {
+        element.style.display = "none";
+        // arrow.style.transform = "rotate(180deg)";
+        flag = true;
+      }
+    </script>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Roselie</a>.
+    </div>
+  </body>
+</html>

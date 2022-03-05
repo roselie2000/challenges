@@ -1,0 +1,75 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+  body {
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  }
+  .main {
+    width: 60%;
+    font-size: 13px;
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 400;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    margin-left: 250px;
+    margin-top: 100px;
+    margin-bottom: 120px;
+    border-radius: 30px;
+    background: url(../images/bg-pattern-desktop.svg) top -320px left -620px
+      no-repeat;
+    background-color: white;
+    /* max-height: 500px; */
+    overflow-x: hidden;
+    overflow-y: hidden;
+    cursor: pointer;
+  }
+
+  .faq {
+    width: 50%;
+    align-items: right;
+    display: inline-block;
+  }
+
+  span {
+    float: right;
+  }
+
+  .Answer {
+    display: none;
+  }
+
+  img {
+    float: left;
+    margin-right: 30px;
+    margin-left: -70px;
+    /* margin-top: -40px; */
+    z-index: 1;
+  }
+
+  #box {
+    position: absolute;
+    top: 265px;
+    left: 255px;
+    z-index: 2;
+  }
+
+  h1 {
+    margin-top: 40px;
+  }
+
+  .Questions:active{
+    color: hsl(14, 88%, 65%);
+  }
+
+  .rotating {
+    transform: rotate(180deg);
+  }
+
+  .active_font {
+    font-weight: 800;
+  }
