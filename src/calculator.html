@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="../themes/calculator.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Spartan" />
+
+    <script src="../script/calculator.js"></script>
+
+    <title>Frontend Mentor | Calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body class="container" data-theme="first" id="themes">
+    <main>
+    <div class="main">
+
+      <div class="head">
+        <h1 class="cal">calc</h1>
+        
+        <div class="themes">
+          <div>Theme</div>
+      
+          <div class="theme-toggle">
+              <input id="first" name="toggle-state" type="radio" checked onclick="theme1()"/>
+              <input id="second" name="toggle-state" type="radio" onclick="theme2()"/>
+              <input id="third" name="toggle-state" type="radio" onclick="theme3()"/>
+
+          </div>
+        </div>
+      </div>
+
+        <div id="answer">0</div>
+
+        <div class="grid_btns" >
+          <button id="btn1" value="7" onclick="display('7')">7</button>
+          <button id="btn2" value="8" onclick="display('8')">8</button>
+          <button id="btn3" value="9" onclick="display('9')">9</button>
+          <button id="btn_del" onclick="Delete()">Del</button>
+          <button id="btn4" value="4" onclick="display('4')">4</button>
+          <button id="btn5" value="5" onclick="display('5')">5</button>
+          <button id="btn6" value="6" onclick="display('6')">6</button>
+          <button id="btn_pls" value="+" onclick="display('+')">+</button>
+          <button id="btn7" value="1" onclick="display('1')">1</button>
+          <button id="btn8" value="2" onclick="display('2')">2</button>
+          <button id="btn9" value="3" onclick="display('3')">3</button>
+          <button id="btn_mns" value="-" onclick="display('-')">-</button>
+          <button id="btn_dt" value="." onclick="display('.')">.</button>
+          <button id="btn_0" value="0" onclick="display('0')">0</button>
+          <button id="btn_slh" value="/" onclick="display('/')">/</button>
+          <button id="btn_mul" value="*" onclick="display('*')">x</button>
+          <button id="btn_rest" onclick="clearScreen()">RESET</button>
+          <button id="btn_eq" onclick="calculate()">=</button>
+        </div>
+      </div>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Roselie</a>.
+      </div>
+    </div>
+</main>
+    <script>
+        
+    </script>
+  </body>
+</html>
