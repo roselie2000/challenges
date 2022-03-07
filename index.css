@@ -10,6 +10,12 @@ h1{
     font-weight: 700;
     font-size: 40px;
 }
+h3{
+    color: rgb(255, 255, 255);
+    font-weight: 750;
+    font-size: 30px;
+    text-align: center;
+}
 
 table{
     width: 100%;
