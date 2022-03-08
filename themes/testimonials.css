@@ -41,7 +41,7 @@ body{
 .first_main_container{
     grid-column: 1/ span 2;
     background-image: url("../images/bg-pattern-quotation.svg");
-    background-position: right;
+    background-position: top right;
     background-repeat: no-repeat;
     background-color: var(--moderate-violet);
     display: inline-block;

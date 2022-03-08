@@ -322,28 +322,47 @@ main {
     align-self: center;
 }
 
-.social-media-icons-area {
-    display: flex;
-    margin: -112px 0 0 970px;
-    flex-direction: row;
-}
-
-.social-media-icons-area i {
-    margin: 0 20px 0 0;
-    padding: 10px;
+.fa {
+    padding: 8px;
+    font-size: 15px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
     border: 1px solid white;
-    border-radius: 50px;
-}
-
-.social-media-icons-area i:hover {
-    cursor: pointer;
-    color: var(--Pink);
-    border: 1px solid var(--Pink);
-}
-
-#facebook-icon {
-    padding: 10px 13px;
-}
+    border-radius: 50%;
+  }
+  
+  .fa-facebook {
+    color: white;
+  }
+  
+  .fa-twitter {
+    color: white;
+  }
+  
+  .fa-instagram {
+    color: white;
+  }
+  
+  .fa:hover{
+    border-color: hsl(300, 69%, 71%);
+    color: hsl(300, 69%, 71%);
+  }
+  
+  input:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: rgba(255, 255, 255, 1);
+  }
+  
+  .social-media-icons-area{
+    text-align: right;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    padding-right: 50px;
+  }
+  
+  
 
 .copy-right-paragraph {
     margin: 90px 0 0 970px;
