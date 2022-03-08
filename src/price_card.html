@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Manrope" />
+
+    <link rel="stylesheet" href="../themes/price_card.css" />
+
+    <title>Frontend Mentor | Interactive pricing component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <div class="heading">
+      <h1>Simple, traffic-based pricing</h1>
+      <h4>Sign-up for our 30-day trial. No credit card required.</h4>
+    </div>
+
+    <div class="main">
+      <div class="Rate">
+        <p id="preview">
+          100K PAGEVIEWS &emsp;&emsp;&emsp;&emsp;&emsp;<span id="dollar">
+            $ </span
+          >&nbsp;<span id="price"></span><span id="month">/month</span>
+        </p>
+      </div>
+
+      <div class="Range">
+        <input
+          type="range"
+          min="1"
+          max="100"
+          value="50"
+          class="slider"
+          id="myRange"
+        />
+      </div>
+
+      <div class="toggle_div">
+        <p>Monthly Billing</p>
+        <label class="toggle">
+          <input type="checkbox" id="check" onclick="clicking()" />
+          <span class="btn"></span>
+        </label>
+        <p>Yearly Billing</p>
+        <p id="disc">25% discount</p>
+      </div>
+
+      <div class="checked">
+        <div>
+          <ul>
+            <li>
+              <img src="../images/icon-check.svg" alt="checked" /> Unlimited
+              websites
+            </li>
+            <li>
+              <img src="../images/icon-check.svg" alt="checked" />100% data
+              ownership
+            </li>
+            <li>
+              <img src="../images/icon-check.svg" alt="checked" />Email reports
+              Start my trial
+            </li>
+          </ul>
+        </div>
+
+        <div><button>Start my trail</button></div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+
+    <script>
+      var slider = document.getElementById("myRange");
+      var output = document.getElementById("price");
+      var toggle = document.getElementById("check");
+      var checking = document.getElementById("check");
+      var clicked = 0;
+      range_value = slider.value;
+      output.innerHTML = parseFloat(range_value).toFixed(2);
+
+      slider.oninput = function () {
+        range_value = this.value;
+        output.innerHTML = parseFloat(range_value).toFixed(2);
+        // console.log(this.value * 12);
+      };
+
+      function monthly() {
+        document.getElementById("month").innerHTML = "/monthly";
+        range_value = slider.value;
+        output.innerHTML = parseFloat(range_value).toFixed(2);
+
+        slider.oninput = function () {
+          range_value = this.value;
+          output.innerHTML = parseFloat(range_value).toFixed(2);
+        };
+      }
+      function Yearly() {
+        document.getElementById("month").innerHTML = "/year";
+        range_value = slider.value * 12;
+        output.innerHTML = parseFloat(range_value).toFixed(2);
+
+        slider.oninput = function () {
+          range_value = this.value * 12;
+          output.innerHTML = parseFloat(range_value).toFixed(2);
+        };
+        // output.innerHTML = this.value * 12;
+      }
+
+      function clicking() {
+        if (checking.checked == true) {
+          Yearly();
+        } else {
+          monthly();
+        }
+      }
+    </script>
+  </body>
+</html>
