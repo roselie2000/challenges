@@ -1,19 +1,20 @@
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 body{
-    font-family: Barlow Semi Condensed, sans-serif;
     background-color: hsl(210, 46%, 95%);
+    font-family: Barlow Semi Condensed, sans-serif;
 }
 
 :root{
+    --btn-box-shadow: 5px 10px 20px hsl(245, 75%, 90%);
     --main-font: "Barlow Semi Condensed", sans-serif;
     --moderate-violet: hsl(263, 55%, 52%);
+    --light-gray: hsl(0, 0%, 81%); 
+    --light-grayish-blue: hsl(210, 46%, 95%); 
     --very-dark-grayish-blue: hsl(217, 19%, 35%);
     --very-dark-blackish-blue: hsl(219, 29%, 14%);
     --white: hsl(0, 0%, 100%);
-    --light-gray: hsl(0, 0%, 81%); 
-    --light-grayish-blue: hsl(210, 46%, 95%); 
-    --btn-box-shadow: 5px 10px 20px hsl(245, 75%, 90%);
+    
 }
 
 body{
@@ -25,28 +26,28 @@ body{
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 289px 280px;
     gap: 25px;
-    padding: 20px;
-    width: 75%;
     margin: auto;
     height: 75%;
+    padding: 20px;
+    width: 75%;
 } 
 
 .grid-container > div{
-    text-align: left;
+    font-size: 13px;
     padding: 20px;
     position: relative;
-    font-size: 13px;
+    text-align: left;
 }
 
 .first_main_container{
-    grid-column: 1/ span 2;
     background-image: url("../images/bg-pattern-quotation.svg");
     background-position: top right;
     background-repeat: no-repeat;
     background-color: var(--moderate-violet);
-    display: inline-block;
-    position: absolute;
     border-radius: 10px;
+    display: inline-block;
+    grid-column: 1/ span 2;
+    position: absolute;
 }
 
 .first_small_container{
@@ -61,28 +62,28 @@ body{
 }
 
 .second_main_container{
-    grid-column: 2/ span 2;
     background-color: var(--very-dark-blackish-blue);
     border-radius: 8px;
+    grid-column: 2/ span 2;
 }
 
 .side_container{
-    grid-row: span 2;
     border-radius: 8px;
     background-color: var(--white);
     box-shadow: var(--btn-box-shadow);
+    grid-row: span 2;
 }
 
 /* image */
 
 img{
     border-radius: 50px;
+    float: left;
+    height: 50px;
     margin-top: 5px;
     margin-bottom: 5px;
     margin-right: 7px;
-    float: left;
     width: 50px;
-    height: 50px;
 }
 
 .profile_name{
@@ -91,8 +92,8 @@ img{
 }
 
 #name{
-    font-size: 12px;
     color: var(--light-gray);
+    font-size: 12px;
 }
 
 span{
@@ -102,17 +103,16 @@ span{
 }
 
 #big{
+    color: var(--light-grayish-blue);
     font-weight: 600;
     font-size: 15px;
-    color: var(--light-grayish-blue);
 }
 
 .content{
-    justify-content: left;
+    color: var(--light-gray);
     font-size: 13px;
     font-family: var(--main-font);
-    color: var(--light-gray);
-
+    justify-content: left;   
 }
 
 #black{
