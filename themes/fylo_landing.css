@@ -1,33 +1,32 @@
 :root{
-    --main--font: "Raleway", "sans-serif";
-    --Very-Dark-Blue: hsl(243, 87%, 12%);
-    --Desaturated-Blue: hsl(238, 22%, 44%);
+    --btn-box-shadow: 5px 10px 20px hsl(245, 75%, 90%);
     --Bright-Blue: hsl(224, 93%, 58%);
-    --Moderate-Cyan: hsl(170, 45%, 43%);
+    --Desaturated-Blue: hsl(238, 22%, 44%);
     --Light-Grayish-Blue: hsl(240, 75%, 98%);
     --Light-Gray: hsl(0, 0%, 75%);
-    --btn-box-shadow: 5px 10px 20px hsl(245, 75%, 90%);
+    --Moderate-Cyan: hsl(170, 45%, 43%);
+    --main--font: "Raleway", "sans-serif"; 
+    --Very-Dark-Blue: hsl(243, 87%, 12%);
+    
 }
 
 body{
     background-repeat: no-repeat;
-    /* min-height: 100vh; */
     max-width: 1500px;
     margin: 0px;
-    padding: 0px;
     -ms-overflow-style: none;
     overflow-y: scroll;
     overflow-x: hidden;
+    padding: 0px;
 
 }
 
 nav{
-    width: 100%;
     height: 60px;
+    margin: 0;
     padding-left: 30px;
     padding-top: 60px;
-    margin: 0;
-    
+    width: 100%;
 }
 
 ul{
@@ -35,38 +34,38 @@ ul{
 }
 
 nav li{
-    float:right;
-    padding-right: 10px;
-    margin-right: 40px;
-    font-family: Raleway, sans-serif;
     color: rgb(37, 34, 34);
+    float:right;
     font-weight: 500;
+    font-family: Raleway, sans-serif;
+    margin-right: 40px;
+    padding-right: 10px;
 }
 
 .first{
-    width: 100%;
-    height: 600px;
-    padding-left: 80px;
-    margin-top: 80px;
     background-image: url(../images/bg-curve-desktop.svg);
     background-position: bottom;
     background-repeat: no-repeat;
     color: rgb(37, 34, 34);
+    height: 600px;
+    padding-left: 80px;
+    margin-top: 80px;
+    width: 100%;
 }
 
 .first input[type=email]{
-    width: 250px;
-    height: 30px;
     border: 1px solid var(--Very-Dark-Blue);
+    height: 30px;
     text-align: center;
+    width: 250px;
 }
 
 .first input[type=submit]{
-    width: 180px;
-    height: 33px;
     border: 0px;
     background-color: var(--Bright-Blue);
+    height: 33px;
     padding: 4px;
+    width: 180px;
 }
 
 .first input[type=submit]:hover, .access_container input[type=submit]:hover{
@@ -75,22 +74,23 @@ nav li{
 }
 
 .first input[type=email]:focus, .access_container input[type=email]:focus{
-    outline: none;
     border: 1px solid rgb(173, 33, 33);
+    outline: none;
 }
 
 .second{
-    width: 100%;
+    background-color: rgba(248,248,254,255);
     height: 600px;
     padding: 50px;
     padding-top: 50px;
-    background-color: rgba(248,248,254,255);
+    width: 100%;
+
 }
 
 .second a{
     color: var(--Bright-Blue);
-    text-decoration: underline;
     padding: 10px;
+    text-decoration: underline;
 }
 
 .second a:hover{
@@ -98,15 +98,15 @@ nav li{
 }
 
 .container{
-    width: 250px;
-    height: 180px;
-    margin: 30px;
-    padding: 25px;
+    align-content: center;
     border: 2px;
     background-color: rgb(255, 255, 255);
     box-shadow: var(--btn-box-shadow);
-    align-content: center;
     color: rgb(37, 34, 34);
+    height: 180px;
+    margin: 30px;
+    padding: 25px;   
+    width: 250px;
 }
 
 .container > p{
@@ -114,14 +114,15 @@ nav li{
 }
 
 .access_container{
-    width: 100%;
+    background-color: var(--Desaturated-Blue);
+    color: hsl(0, 0%, 100%);
+    display: grid;
+    grid-template-columns: 50% 50%;
     height: 250px;
     padding-left: 50px;
     padding-top: 50px;
-    background-color: var(--Desaturated-Blue);
-    display: grid;
-    grid-template-columns: 50% 50%;
-    color: hsl(0, 0%, 100%);
+    width: 100%;
+
 }
 
 .para_container{
@@ -130,26 +131,27 @@ nav li{
 
 .input_container{
     align-content: center;
-    padding-top: 30px;
-    margin-top: 30px;
     float: right;
+    margin-top: 30px;
+    padding-top: 30px;
 }
 
 .input_container input[type=email]{
-    width: 500px;
-    height: 30px;
     border: 1px solid var(--Very-Dark-Blue);
-    color: hsl(0, 0%, 100%);;
+    color: hsl(0, 0%, 100%);
+    height: 30px;
+    width: 500px;
 }
 
 .input_container input[type=submit]{
-    width: 180px;
-    height: 33px;
     background-color: var(--Bright-Blue);
     border: 0px;
+    color: hsl(0, 0%, 100%);
+    height: 33px;
     margin-top: 10px;
     text-align: center;
-    color: hsl(0, 0%, 100%);
+    width: 180px;
+
 }
 
 #head{
@@ -158,15 +160,16 @@ nav li{
 }
 
 .footer_container{
-    width: 100%;
+    background-color: var(--Very-Dark-Blue);
+    color: hsl(0, 0%, 100%);
+    display: grid;
+    font-weight: 400;
+    grid-template-columns: 25% 25% 25% 25%;
     height: 350px;
     padding-left: 50px;
     padding-top: 50px;
-    background-color: var(--Very-Dark-Blue);
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    font-weight: 400;
-    color: hsl(0, 0%, 100%);
+    width: 100%;
+
 }
 
 .footer_container ul{
@@ -194,15 +197,15 @@ p{
 }
 
 .fa {
-    padding: 10px;
-    font-size: 10px;
-    width: 10px;
-    height: 10px;
-    text-align: center;
-    text-decoration: none;
-    margin-top: 80px;
     border: 1px solid white;
     border-radius: 50%;
+    font-size: 10px;
+    height: 10px;
+    margin-top: 80px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    width: 10px;
   }
   
 .fa:hover {

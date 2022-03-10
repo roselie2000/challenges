@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../themes/aparel.css" />
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="logo-container">
+        <img src="../images/logo5.svg" alt="" />
+      </div>
+      <div class="hero"></div>
+      <div class="text-container">
+        <div class="titles">
+          <p>WE'RE</p>
+          <strong>COMING SOON</strong>
+        </div>
+        <div class="paragraph">
+          <p>
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+        </div>
+        <form
+          action="submit"
+          id="email-form"
+          aria-label="Email submission form"
+        >
+          <input
+            type="text"
+            name="emailInput"
+            id="email-input"
+            placeholder="Email Address"
+            aria-label="Email input"
+          />
+          <img
+            src="../images/icon-error.svg"
+            alt="error"
+            id="error-img"
+            class="invisible"
+          />
+          <div class="submit-container">
+            <input
+              type="submit"
+              id="submit-button"
+              aria-label="Submit Email"
+              value=" "
+            />
+            <img src="../images/icon-arrow1.svg" alt="arrow" />
+          </div>
+          <div id="error-message" class="invisible">
+            <p>Please provide a valid email</p>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by Roselie</a>.
+      </p>
+    </footer>
+    <script src="../script/aparel.js"></script>
+  </body>
+</html>

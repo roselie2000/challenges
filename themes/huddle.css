@@ -1,8 +1,8 @@
 :root {
-    --pink: hsl(322, 100%, 66%);
+    --dark-cyan: hsl(192, 100%, 9%);
     --light-pink: hsl(321, 100%, 78%);
     --light-red: hsl(0, 100%, 63%);
-    --dark-cyan: hsl(192, 100%, 9%);
+    --pink: hsl(322, 100%, 66%);
     --pale-blue: hsl(207, 100%, 98%);
   }
   
@@ -10,9 +10,9 @@
   *::before,
   *::after {
     box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
     margin: 0;
     padding: 0;
-    font-family: "Open Sans", sans-serif;
   }
   
   html {
@@ -26,15 +26,15 @@
   
   body {
     background-color: #fff;
+    color: var(--dark-cyan);
     font-size: 1.6rem;
     line-height: 1.5;
-    color: var(--dark-cyan);
   }
   
   .container {
-    width: 100%;
     margin: 0 auto;
     padding: 1.5rem;
+    width: 100%;
   }
   
   img {
@@ -47,11 +47,11 @@
   }
   
   .btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
     display: inline-block;
     outline: none;
-    border: none;
-    cursor: pointer;
-    background-color: transparent;
   }
   
   .btn.rounded-50 {
@@ -59,19 +59,19 @@
   }
   
   .heading {
+    color: var(--dark-cyan);
     font-family: "Poppins", sans-serif;
     font-weight: 700;
-    color: var(--dark-cyan);
   }
   
   /* HEADER */
   header {
+    align-items: center;
     height: 10rem;
     display: flex;
-    align-items: center;
+    left: 0;
     position: absolute;
     top: 0;
-    left: 0;
     width: 100%;
     z-index: 1;
   }

@@ -1,7 +1,7 @@
 :root{
-    --Pale-Blue: hsl(243, 100%, 93%);
-    --Grayish-Blue: hsl(229, 7%, 55%);
     --Dark-Blue: hsl(228, 56%, 26%);
+    --Grayish-Blue: hsl(229, 7%, 55%);
+    --Pale-Blue: hsl(243, 100%, 93%);
     --Very-Dark-Blue: hsl(229, 57%, 11%);
 }
 
@@ -14,16 +14,16 @@ html{
 }
 
 .container{
-    height: 400px;
-    width: 800px;
-    padding: 10px;
+    align-content: center;
     display: grid;
     gap: 10px;
     grid-template-columns: 250px 500px;
-    align-content: center;
+    height: 400px;
     margin-left: 300px;
     margin-top: 50px;
     margin-bottom: 180px;
+    padding: 10px;
+    width: 800px;
 }
 
 .first_container{
@@ -31,19 +31,20 @@ html{
 }
 
 .second_container{
-    height: 300px;
-    font-size: 13px;
     color: var(--Very-Dark-Blue);
+    font-size: 13px;
+    height: 300px;
+
 }
 
 .logo_container{
-    height: 200px;
+    align-content: center;
     background-color: var(--Dark-Blue);
+    border-radius: 10px 70px 10px 10px;
+    height: 200px;
     margin-top: 50px;
     margin-left: 10px;
     margin-right: 10px;
-    border-radius: 10px 70px 10px 10px;
-    align-content: center;
 }
 
 .grid-container {
@@ -56,35 +57,35 @@ html{
   
 .grid-container > div {
     background-color: var(--Very-Dark-Blue);
-    text-align: center;
     border-radius: 5px;
-    padding: 5px 0;
     font-size: 30px;
+    text-align: center;
+    padding: 5px 0;
 }
 
 .gauage_container{
-    height: 140px;
     background-color: var(--Dark-Blue);
-    margin-top: 33px;
-    margin-left: 10px;
-    padding-top: 13px;
-    padding-left: 25px;
     border-radius: 10px;
     color: var(--Grayish-Blue);
     font-size: 20px;
     font-family: Raleway, sans-serif;
+    height: 140px;
+    margin-top: 33px;
+    margin-left: 10px;
+    padding-top: 13px;
+    padding-left: 25px;  
     z-index: 1;
     
 }
 
 meter{
-    width: 400px;
-    height: 25px;
-    position: relative;  
-    margin: 2px;
     color: var(--Pale-Blue);
     font-size: 14px;
     font-family: Raleway, sans-serif;
+    height: 25px;
+    margin: 2px;
+    position: relative;  
+    width: 400px;
 }
 
 meter::before{
@@ -96,8 +97,8 @@ meter::before{
 meter::after{
     content: '1000 GB';
     position: absolute;
-    top: 30px;
     right: 0;
+    top: 30px;
 }
 
 meter::-webkit-meter-optimum-value {
@@ -105,28 +106,28 @@ meter::-webkit-meter-optimum-value {
 }
 
 .box{
-    width: 100px;
     background: white;
-    text-align: center;
+    border-radius: 5px;
     padding: 20px;
     position: relative;
-    border-radius: 5px;
+    text-align: center;
     top: 55px;
     left: 320px;
+    width: 100px;
     z-index: 30;
   }
 
   .triangle::before{
-    content: "";
-    width: 0px;
-    height: 0px;
-    position: absolute;
     border-left: 15px solid transparent;
     border-right: 15px solid white;
     border-top: 15px solid white;
     border-bottom: 15px solid transparent;
+    content: "";
+    height: 0px;
+    position: absolute;
     right: 0px;
     top: 53px;
+    width: 0px;
   }
 
 

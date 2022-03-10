@@ -1,8 +1,8 @@
 :root {
+    --Grayish-Blue: hsl(208, 11%, 55%);
     --Pink: hsl(322, 100%, 66%);
     --Very-Pale-Cyan: hsl(193, 100%, 96%);
     --Very-Dark-Cyan: hsl(192, 100%, 9%);
-    --Grayish-Blue: hsl(208, 11%, 55%);
 }
 
 *{
@@ -10,17 +10,17 @@
 }
 
 main {
-    width: 100%;
     font-family: 'Poppins', sans-serif;
+    width: 100%;
 }
 
 .box-1 {
-    width: 100%;
-    height: 650px;
-    font-size: 18px;
     background-color: var(--Very-Pale-Cyan);
     background-repeat: no-repeat;
     background-image: url("../images/bg-hero-desktop.svg");
+    font-size: 18px;
+    height: 650px;
+    width: 100%;
 }
 
 #logo {
@@ -28,52 +28,55 @@ main {
 }
 
 .box-1 h1 {
-    width: 500px;
-    margin: 161px 0 0 40px;
     font-size: 43px;
+    margin: 161px 0 0 40px;
+    width: 500px;
+
 }
 
 .box-1 p {
-    width: 570px;
     margin: 20px 0 0 40px;
+    width: 570px;
 }
 
 #link-1 {
-    display: flex;
-    height: 55px;
-    width: 300px;
-    margin-top: 30px;
-    flex-direction: row;
     align-items: center;
-    justify-content: center;
     border-radius: 50px;
     background-color: var(--Pink);
+    display: flex;
+    flex-direction: row;
+    height: 55px;
+    justify-content: center;
+    margin-top: 30px;
+    width: 300px;
+    
 }
 
 #link-1:hover {
-    cursor: pointer;
     background-color: rgba(255, 82, 191, 0.6);
+    cursor: pointer;
 }
 
 #link-1 a {
-    font-size: 14px;
     color: white;
+    font-size: 14px;
     text-decoration: none;
 }
 
 #link-2 {
-    position: absolute;
-    display: flex;
-    top: 40px;
-    left: 80%;
-    height: 45px;
-    width: 180px;
-    flex-direction: row;
     align-items: center;
-    justify-content: center;
     border-radius: 50px;
     box-shadow: 1px 1px 10px hsl(208, 11%, 55%);
     background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 45px;
+    left: 80%;
+    position: absolute;
+    top: 40px;
+    width: 180px;
+    
 }
 
 #link-2:hover {
@@ -81,112 +84,114 @@ main {
 }
 
 #link-2 a {
-    font-size: 14px;
     color: var(--Grayish-Blue);
+    font-size: 14px;
     text-decoration: none;
 }
 
 #mockup {
+    left: 48%;
     position: absolute;
     top: 27%;
-    left: 48%;
     width: 48%;
 }
 
 .box-2 {
-    width: 90%;
-    height: 400px;
-    margin: 100px auto 0 auto;
     border-radius: 10px;
     box-shadow: 2px 2px 10px gray;
+    height: 400px;
+    margin: 100px auto 0 auto;
+    width: 90%;
 }
 
 #title {
-    width: 300px;
     margin: 0 0 0 100px;
     padding-top: 140px;
+    width: 300px;
 }
 
 .box-2 #grow-paragraph {
-    width: 500px;
     margin: 15px 0 0 100px;
     color: var(--Grayish-Blue);
+    width: 500px;
 }
 
 .box-2 img {
+    left: 60%;
     position: absolute;
     top: 800px;
-    left: 60%;
     width: 30%;
 }
 
 .box-3 {
-    width: 90%;
-    height: 400px;
-    margin: 50px auto;
     border-radius: 10px;
     box-shadow: 2px 2px 10px gray;
+    height: 400px;
+    margin: 50px auto;
+    width: 90%;
 }
 
 .box-3 h2 {
-    width: 300px;
     margin: 0 0 0 660px;
     padding-top: 120px; 
+    width: 300px;
 }
 
 .box-3 #conversation-paragraph {
-    width: 510px;
-    margin: 15px 0 0 660px;
     color: var(--Grayish-Blue);
+    margin: 15px 0 0 660px;
+    width: 510px;
 }
 
 .box-3 img {
+    left: 13%;
     position: absolute;
     top: 1250px;
-    left: 13%;
     width: 32%;
 }
 
 .box-4 {
-    width: 90%;
-    height: 400px;
-    margin: 50px auto 0 auto;
     border-radius: 10px;
     box-shadow: 2px 2px 10px gray;
+    height: 400px;
+    margin: 50px auto 0 auto;
+    width: 90%;
 }
 
 .box-4 h2 {
-    width: 300px;
     margin: 0 0 0 100px;
     padding-top: 140px;
+    width: 300px;
 }
 
 .box-4 #users-paragraph {
-    width: 475px;
-    margin: 15px 0 0 100px;
     color: var(--Grayish-Blue);
+    margin: 15px 0 0 100px;
+    width: 475px;
 }
 
 .box-4 img {
+    left: 60%;
     position: absolute;
     top: 1700px;
-    left: 60%;
     width: 30%;
 }
 
 .box-5 {
-    display: flex;
-    position: absolute;
-    top: 2200px;
-    left: 25%;
-    width: 50%;
-    height: 200px;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
     background-color: white;
     border-radius: 10px;
     box-shadow: 2px 2px 10px gray;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: center;
+    left: 25%;
+    position: absolute;
+    top: 2200px;
+    width: 50%;
+    
+    
 }
 
 .box-5 p {
@@ -194,41 +199,41 @@ main {
 }
 
 #link-3 {
-    display: flex;
-    height: 55px;
-    width: 300px;
-    margin: 0;
-    flex-direction: row;
     align-items: center;
-    justify-content: center;
     border-radius: 50px;
     background-color: var(--Pink);
+    display: flex;
+    flex-direction: row;
+    height: 55px;
+    justify-content: center;
+    margin: 0;
+    width: 300px;
 }
 
 #link-3:hover {
-    cursor: pointer;
     background-color: rgba(255, 82, 191, 0.6);
+    cursor: pointer;
 }
 
 #link-3 a {
-    font-size: 14px;
     color: white;
+    font-size: 14px;
     text-decoration: none;    
 }
 
 .box-6 {
-    width: 100%;
+    background-color: var(--Very-Dark-Cyan);
+    color: white;
     height: 60vh;
     margin: 250px auto 0 auto;
-    color: white;
-    background-color: var(--Very-Dark-Cyan);
+    width: 100%;
 }
 
 .contact-area {
     display: flex;
     flex-direction: column;
-    margin: -124px 0 0 750px;
     font-size: 14px;
+    margin: -124px 0 0 750px;
 }
 
 .contact-area p {
@@ -247,8 +252,8 @@ main {
 .menu-area {
     display: flex;
     flex-direction: column;
-    margin: -161px 0 0 590px;
     font-size: 14px;
+    margin: -161px 0 0 590px;
 }
 
 .menu-area p {
@@ -266,71 +271,72 @@ main {
 
 .information-area {
     display: grid;
-    width: 420px;
-    margin-left: 100px;
-    padding-top: 120px;
+    font-size: 14px;
     grid-template-columns: 30px 380px;
     grid-template-rows: 40px 80px 40px 40px;
-    font-size: 14px;
+    margin-left: 100px;
+    padding-top: 120px;
+    width: 420px;
+
 }
 
 #footer-logo {
-    width: 170px;
-    margin: 0 0 0 -10px;
     grid-column: 1/3;
     grid-row: 1/2;
+    width: 170px;
+    margin: 0 0 0 -10px;
 }
 
 #icon-location {
-    margin: 15px 0 0 0;
     grid-column: 1/2;
     grid-row: 2/3;
+    margin: 15px 0 0 0;
 }
 
 #location-paragraph {
-    margin: 10px 0 0 0;
     grid-column: 2/3;
     grid-row: 2/3;
+    margin: 10px 0 0 0;
     text-align: justify;
 }
 
 #phone-icon {
-    margin: 0;
+    align-self: center;
     grid-column: 1/2;
     grid-row: 3/4;
-    align-self: center;
+    margin: 0;
 }
 
 #phone-paragraph {
-    margin: 0;
+    align-self: center;
     grid-column: 2/3;
     grid-row: 3/4;
-    align-self: center;
+    margin: 0;
 }
 
 #email-icon {
-    margin: 0;
+    align-self: center;
     grid-column: 1/2;
     grid-row: 4/5;
-    align-self: center;
+    margin: 0;
 }
 
 #email-paragraph {
-    margin: 0;
+    align-self: center;
     grid-column: 2/3;
     grid-row: 4/5;
-    align-self: center;
+    margin: 0;
 }
 
 .fa {
-    padding: 8px;
-    font-size: 15px;
-    width: 20px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
     border: 1px solid white;
     border-radius: 50%;
+    margin: 5px 2px;
+    padding: 8px;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;  
+    width: 20px;
   }
   
   .fa-facebook {
@@ -356,15 +362,15 @@ main {
   }
   
   .social-media-icons-area{
-    text-align: right;
     margin-left: 30px;
     margin-bottom: 10px;
     padding-right: 50px;
+    text-align: right;
   }
   
   
 
 .copy-right-paragraph {
-    margin: 90px 0 0 970px;
     font-size: 14px; 
+    margin: 90px 0 0 970px;
 }

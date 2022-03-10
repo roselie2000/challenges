@@ -1,0 +1,265 @@
+:root {
+    --desaturated-red: hsl(0, 36%, 70%);
+    --soft-red: hsl(0, 93%, 68%);
+    --dark-grayish-red: hsl(0, 6%, 24%);
+    --gradient-white-to-soft-white: 135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%);
+    --gradient-desaturated-red-to-soft-red: 135deg, hsl(0, 80%, 86%),
+      hsl(0, 74%, 74%);
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100vh;
+    width: 100vw;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "Josefin Sans", sans-serif;
+    color: var(--desaturated-red);
+    background: linear-gradient(var(--gradient-white-to-soft-white));
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  form {
+    position: relative;
+  }
+  
+  .container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 1.4fr 1.5fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "logo-container"
+      "hero"
+      "text-container";
+  }
+  
+  .logo-container {
+    grid-area: logo-container;
+    width: 100%;
+    height: fit-content;
+    padding: 1.25rem 1.875rem;
+  }
+  
+  .logo-container img {
+    width: 5.9375rem;
+  }
+  
+  .hero {
+    grid-area: hero;
+    width: 100%;
+    height: 15.625rem;
+    margin-bottom: 1.875rem;
+    background-image: url("../images/hero-mobile.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .text-container {
+    grid-area: text-container;
+    padding: 0 1.25rem;
+    text-align: center;
+  }
+  
+  .titles {
+    margin: 0.625rem 0;
+    font-size: 2.3125rem;
+    letter-spacing: 0.625rem;
+  }
+  
+  .titles P {
+    font-weight: 300;
+  }
+  
+  .titles strong {
+    color: var(--dark-grayish-red);
+  }
+  
+  .paragraph {
+    margin-bottom: 1.875rem;
+    line-height: 1.35;
+  }
+  
+  #email-input {
+    width: 100%;
+    height: 2.8125rem;
+    border-radius: 3.125rem;
+    border: 0.0625rem solid var(--desaturated-red);
+    padding-left: 1.25rem;
+  }
+  
+  #email-input:focus {
+    border: 0.125rem solid var(--soft-red);
+    outline: none;
+  }
+  
+  ::placeholder {
+    color: var(--desaturated-red);
+    font-weight: 300;
+  }
+  
+  ::placeholder:focus {
+    color: var(--soft-red);
+  }
+  
+  #submit-button,
+  #error-img,
+  #error-message {
+    position: absolute;
+  }
+  
+  #error-img {
+    right: 4.375rem;
+    bottom: 0.625rem;
+  }
+  
+  .submit-container img {
+    position: absolute;
+    top: 0.75rem;
+    right: 1.25rem;
+  }
+  
+  #submit-button {
+    top: 0;
+    right: 0;
+    width: 3.5rem;
+    height: 2.8125rem;
+    background: linear-gradient(var(--gradient-desaturated-red-to-soft-red));
+    border: none;
+    border-radius: 3.125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 10px 30px 0px rgba(206, 151, 151, 0.4);
+    transition: 0.6s;
+  }
+  
+  #submit-button:hover {
+    opacity: 0.5;
+  }
+  
+  #error-message {
+    padding: 0.4375rem 0.9375rem;
+  }
+  
+  #error-message p {
+    text-align: left;
+    font-size: 0.8125rem;
+  }
+  
+  .invisible {
+    opacity: 0;
+    transition: 0.5s;
+  }
+  
+  .visible {
+    opacity: 1;
+    transition: 0.5s;
+  }
+  
+  .attribution {
+    height: 4.375rem;
+  }
+  
+  .attribution a {
+    color: var(--soft-red);
+    text-decoration: none;
+  }
+  
+  @media (min-width: 600px) {
+    body {
+      font-size: 1rem;
+    }
+  
+    button {
+      cursor: pointer;
+    }
+  
+    .container {
+      width: 100%;
+      height: 25rem;
+      margin: 6.25rem auto;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 0.1fr 1.9fr 1fr;
+      gap: 0px 0px;
+      grid-template-areas:
+        "logo-container hero"
+        "text-container hero"
+        "text-container hero";
+    }
+  
+    .logo-container {
+      width: fit-content;
+    }
+  
+    .hero {
+      height: 100%;
+      margin: 0;
+      background-image: url("../images/hero-desktop.jpg");
+    }
+  
+    .text-container {
+      padding: 1.875rem;
+      text-align: left;
+    }
+  }
+  
+  @media (min-width: 900px) {
+    .container {
+      width: 50rem;
+    }
+  }
+  
+  @media (min-width: 1440px) {
+    .container {
+      width: 62.5rem;
+      height: 34.375rem;
+      margin: 3.125rem auto;
+      grid-template-columns: 1.2fr 0.8fr;
+      background-image: url("../images/bg-pattern-desktop.svg");
+      background-position: bottom left;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  
+    .logo-container {
+      padding: 3.125rem 0 0 5rem;
+    }
+  
+    .logo-container img {
+      width: 7.5rem;
+    }
+  
+    .text-container {
+      padding: 4rem 9.375rem 4rem 4.6875rem;
+      line-height: 1.25;
+    }
+  
+    .paragraph {
+      font-size: 0.875rem;
+      line-height: 1.5;
+    }
+  
+    .submit-container img {
+      right: 1.875rem;
+    }
+  
+    #submit-button {
+      width: 4.6875rem;
+    }
+  
+    #error-img {
+      margin-right: 0.625rem;
+    }
+  }
