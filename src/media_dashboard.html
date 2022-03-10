@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+
+    <link rel="stylesheet" href="../themes/media_dashboard.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Rubik:ital,wght@0,500;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="container" data-theme="dark" id="themes">
+    <main>
+      <div class="head">
+        <div>
+          <p>
+            <span>Social Media Dashboard</span><br />Total Followers: 23,004
+          </p>
+        </div>
+        <div class="toggle_div">
+          <p>Dark Mode</p>
+          <label class="toggle">
+            <input type="checkbox" id="check" onclick="clicking()" />
+            <span class="btn"></span>
+          </label>
+        </div>
+      </div>
+
+      <div class="media">
+        <div class="facebook">
+          <div class="name">@nathanf</div>
+          <div class="nums">1987</div>
+          <div class="followers">Followers</div>
+          <div class="status-green">12 Today</div>
+        </div>
+
+        <div class="twitter">
+          <div class="name">@nathanf</div>
+          <div class="nums">1044</div>
+          <div class="followers">Followers</div>
+          <div class="status-green">99 Today</div>
+        </div>
+
+        <div class="instagram">
+          <div class="name">@realnathanf</div>
+          <div class="nums">11k</div>
+          <div class="followers">Followers</div>
+          <div class="status-green">1099 Today</div>
+        </div>
+
+        <div class="youtube">
+          <div class="name">Nathan F.</div>
+          <div class="nums">8239</div>
+          <div class="followers">Subscribers</div>
+          <div class="status-red">144 Today</div>
+        </div>
+      </div>
+
+      <div class="heading">Overview - Today</div>
+      <div class="overview">
+        <div class="views">
+          <div class="name2">Page Views</div>
+          <div class="images">
+            <img src="../images/icon-facebook.svg" alt="facebook" />
+          </div>
+          <div class="num2">87</div>
+          <div class="status_green">
+            <img src="../images/icon-up.svg" style="margin-right: 2px" />3%
+          </div>
+        </div>
+
+        <div class="views">
+          <div class="name2">Likes</div>
+          <div class="images">
+            <img src="../images/icon-facebook.svg" alt="facebook" />
+          </div>
+          <div class="num2">52</div>
+          <div class="status_red">
+            <img src="../images/icon-down.svg" style="margin-right: 2px" />2%
+          </div>
+        </div>
+
+        <div class="views">
+          <div class="name2">Likes</div>
+          <div class="images">
+            <img src="../images/icon-instagram.svg" alt="instagram" />
+          </div>
+          <div class="num2">5462</div>
+          <div class="status_green">
+            <img src="../images/icon-up.svg" style="margin-right: 2px" />2257%
+          </div>
+        </div>
+
+        <div class="views">
+          <div class="name2">Profile Views</div>
+          <div class="images">
+            <img src="../images/icon-instagram.svg" alt="instagram" />
+          </div>
+          <div class="num2">52K</div>
+          <div class="status_green">
+            <img src="../images/icon-up.svg" style="margin-right: 2px" />1375%
+          </div>
+        </div>
+
+        <div class="views">
+          <div class="name2">Retweets</div>
+          <div class="images">
+            <img src="../images/icon-twitter.svg" alt="twitter" />
+          </div>
+          <div class="num2">117</div>
+          <div class="status_green">
+            <img src="../images/icon-up.svg" style="margin-right: 2px" />303%
+          </div>
+        </div>
+
+        <div class="views">
+          <div class="name2">Likes</div>
+          <div class="images">
+            <img src="../images/icon-twitter.svg" alt="twitter" />
+          </div>
+          <div class="num2">507</div>
+          <div class="status_green">
+            <img src="../images/icon-up.svg" style="margin-right: 2px" />553%
+          </div>
+        </div>
+
+        <div class="views">
+          <div class="name2">Likes</div>
+          <div class="images">
+            <img src="../images/icon-twitter.svg" alt="twitter" />
+          </div>
+          <div class="num2">107</div>
+          <div class="status_red">
+            <img src="../images/icon-down.svg" style="margin-right: 2px" />19%
+          </div>
+        </div>
+
+        <div class="views">
+          <div class="name2">Total Views</div>
+          <div class="images">
+            <img src="../images/icon-twitter.svg" alt="twitter" />
+          </div>
+          <div class="num2">1407</div>
+          <div class="status_red">
+            <img src="../images/icon-down.svg" style="margin-right: 2px" />12%
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      var mycont = document.getElementById("themes");
+      var checking = document.getElementById("check");
+
+      function clicking() {
+        if (checking.checked == true) {
+          document.body.style.backgroundImage = `url('../images/light_bg.png')`;
+          mycont.setAttribute("data-theme", "light");
+        } else {
+          document.body.style.backgroundImage = `url('../images/bg.png')`;
+          mycont.setAttribute("data-theme", "dark");
+        }
+      }
+    </script>
+  </body>
+</html>
