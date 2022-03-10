@@ -1,27 +1,27 @@
-@import url("https://fonts.google.com/specimen/Rubik");
+@import url(https://fonts.google.com/specimen/Rubik);
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Rubik', sans-serif;
     background-color: hsl(270, 20%, 96%);
-    background-image: url("../images/chatapp_bg.png");
+    background-image: url(../images/chatapp_bg.png);
     background-repeat: no-repeat;
     bottom: -10;
     font-size: 16px;
     overflow-y: hidden;
 }
 
-.main{
+.main {
     display: flex;
     width: 100%;
     height: 100%;
 }
 
-.mobile{
+.mobile {
     width: 300px;
     height: 580px;
     border: 12px solid #fff;
@@ -33,7 +33,7 @@ body{
     box-shadow: 0 10px 20px hsl(206, 6%, 79%);
 }
 
-.header{
+.header {
     height: 70px;
     background: linear-gradient(to right, hsl(264,100%,61%), hsl(293,100%,63%));
     border-radius: 20px 20px 10px 10px;
@@ -41,7 +41,7 @@ body{
     text-align: center;
 }
 
-.header::before{
+.header::before {
     content: "";
     position: absolute;
     top: 52px;
@@ -53,7 +53,7 @@ body{
 
 }
 
-.desc{
+.desc {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -61,14 +61,14 @@ body{
     padding: 20px 20px;
 }
 
-.chevron{
+.chevron {
     position: relative;
     margin-top: 0px;
     margin-right: 15px;
     opacity: 0.8;
 }
 
-.chevron::before{
+.chevron::before {
     content: "";
     position: absolute;
     top: -8px;
@@ -79,7 +79,7 @@ body{
     transform: skew(-28deg,0deg);
 }
 
-.chevron::after{
+.chevron::after {
     content: "";
     position: absolute;
     top: 0px;
@@ -89,10 +89,10 @@ body{
     background-color: #fff;
     transform: skew(28deg,0deg);
 }
-.avatar{
+.avatar {
     justify-content: center;
 }
-.avatar img{
+.avatar img {
     width: 35px;
     height: 35px;
     border-radius: 50%;
@@ -101,7 +101,7 @@ body{
     border: 2px solid #fff;
 }
 
-.name{
+.name {
     color: #fff;
     margin-top: -46px;
     font-weight: 500;
@@ -110,13 +110,13 @@ body{
     margin-bottom: 2px;
 }
 
-.status{
+.status {
     font-size: 12px;
     color: #fff;
     opacity: 0.6;
 }
 
-.dots{
+.dots {
     position: absolute;
     width: 4px;
     height: 4px;
@@ -125,7 +125,7 @@ body{
     border-radius: 50%;
 }
 
-.dots::before{
+.dots::before {
     content: "";
     position: absolute;
     width: 4px;
@@ -136,7 +136,7 @@ body{
     border-radius: 50%;
 }
 
-.dots::after{
+.dots::after {
     content: "";
     position: absolute;
     width: 4px;
@@ -147,7 +147,7 @@ body{
     border-radius: 50%;
 }
 
-.messages{
+.messages {
     display: flex;
     flex-direction: column;
     padding: 7px 3px 7px;
@@ -155,11 +155,11 @@ body{
     border-radius: 10px 10px 20px 20px;
 }
 
-.text{
+.text {
     border-radius: 15px;
 }
 
-.reply{
+.reply {
     background-color: hsl(206, 6%, 79%);
     max-width: 60%;
     margin-bottom: 8px;
@@ -169,19 +169,19 @@ body{
     margin-left: 4px;
 }
 
-.pics{
+.pics {
     display: flex;
     justify-content: flex-end;
 }
 
-.pics img{
+.pics img {
     width: 72px;
     padding: 5px 7px;
     border-radius: 25%;
     cursor: pointer;
 }
 
-.user{
+.user {
     max-width: 60%;
     width: fit-content;
     display: flex;
@@ -195,12 +195,12 @@ body{
     margin-right: 5px;
 }
 
-.user1{
+.user1 {
     margin-left: auto;
     margin-bottom: 7px;
 }
 
-.offer{
+.offer {
     max-width: 65%;
     background: linear-gradient(to right, hsl(293,100%,63%),hsl(264,100%,61%));
     padding: 2px 25px 2px 13px;
@@ -216,7 +216,7 @@ body{
     height: 44px;
 }
 
-.offer div{
+.offer div {
     width: 14px;
     height: 14px;
     border-radius: 50%;
@@ -224,7 +224,7 @@ body{
     opacity: 0.4;
 }
 
-.offer p{
+.offer p {
     margin-left: -12px;
     opacity: 0.8;
 }
@@ -234,16 +234,16 @@ body{
     font-weight: 700;
 }
 
-.hour{
-    margin-left: -32px !important;
+.hour {
+    margin-left: -32px;
 }
 
-form{
+form {
     display: inline-flex;
     margin-top: 5px;
 }
 
-input{
+input {
     width: 100%;
     padding: 18px 25px 15px;
     border-radius: 35px;
@@ -251,7 +251,7 @@ input{
     opacity: 0.8;
 }
 
-.arrow{
+.arrow {
     font-size: 30px;
     color: #fff;
     background-color: hsl(271, 36%, 24%);
@@ -264,16 +264,16 @@ input{
     cursor: pointer;
 }
 
-.booking{
+.booking {
     margin-left: 150px;
     margin-top: 200px;
 }
 
-.booking h1{
+.booking h1 {
     margin-bottom: 20px;
     color: hsl(271, 36%, 24%);
 }
 
-.booking p{
+.booking p {
     color: hsl(270, 7%, 64%);
 }

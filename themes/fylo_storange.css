@@ -1,11 +1,11 @@
-:root{
+:root {
     --Dark-Blue: hsl(228, 56%, 26%);
     --Grayish-Blue: hsl(229, 7%, 55%);
     --Pale-Blue: hsl(243, 100%, 93%);
     --Very-Dark-Blue: hsl(229, 57%, 11%);
 }
 
-html{
+html {
     background-color: var(--Very-Dark-Blue);
     background-image: url(../images/bg-desktop.png);
     background-repeat: no-repeat;
@@ -13,7 +13,7 @@ html{
     
 }
 
-.container{
+.container {
     align-content: center;
     display: grid;
     gap: 10px;
@@ -26,18 +26,18 @@ html{
     width: 800px;
 }
 
-.first_container{
+.first-container {
     height: 300px;
 }
 
-.second_container{
+.second-container {
     color: var(--Very-Dark-Blue);
     font-size: 13px;
     height: 300px;
 
 }
 
-.logo_container{
+.logo-container {
     align-content: center;
     background-color: var(--Dark-Blue);
     border-radius: 10px 70px 10px 10px;
@@ -63,7 +63,7 @@ html{
     padding: 5px 0;
 }
 
-.gauage_container{
+.gauage-container {
     background-color: var(--Dark-Blue);
     border-radius: 10px;
     color: var(--Grayish-Blue);
@@ -78,7 +78,7 @@ html{
     
 }
 
-meter{
+meter {
     color: var(--Pale-Blue);
     font-size: 14px;
     font-family: Raleway, sans-serif;
@@ -88,13 +88,13 @@ meter{
     width: 400px;
 }
 
-meter::before{
+meter::before {
     content: '0 GB';
     position: absolute;
     top: 30px;
 }
 
-meter::after{
+meter::after {
     content: '1000 GB';
     position: absolute;
     right: 0;
@@ -105,7 +105,7 @@ meter::-webkit-meter-optimum-value {
     background: -webkit-linear-gradient(left, hsl(7, 73%, 85%), hsl(335, 100%, 65%));
 }
 
-.box{
+.box {
     background: white;
     border-radius: 5px;
     padding: 20px;
@@ -115,9 +115,9 @@ meter::-webkit-meter-optimum-value {
     left: 320px;
     width: 100px;
     z-index: 30;
-  }
+}
 
-  .triangle::before{
+.triangle::before {
     border-left: 15px solid transparent;
     border-right: 15px solid white;
     border-top: 15px solid white;
@@ -128,6 +128,13 @@ meter::-webkit-meter-optimum-value {
     right: 0px;
     top: 53px;
     width: 0px;
-  }
+ }
 
+.attribution {
+   font-size: 11px;
+   text-align: center;
+}
+ .attribution a {
+   color: hsl(228, 45%, 44%);
+}
 

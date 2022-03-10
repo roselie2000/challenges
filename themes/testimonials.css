@@ -1,11 +1,4 @@
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
-body{
-    background-color: hsl(210, 46%, 95%);
-    font-family: Barlow Semi Condensed, sans-serif;
-}
-
-:root{
+:root {
     --btn-box-shadow: 5px 10px 20px hsl(245, 75%, 90%);
     --main-font: "Barlow Semi Condensed", sans-serif;
     --moderate-violet: hsl(263, 55%, 52%);
@@ -17,8 +10,10 @@ body{
     
 }
 
-body{
+body {
     min-height: 100vh;
+    background-color: hsl(210, 46%, 95%);
+    font-family: Barlow Semi Condensed, sans-serif;
 }
 
 .grid-container { 
@@ -32,14 +27,14 @@ body{
     width: 75%;
 } 
 
-.grid-container > div{
+.grid-container > div {
     font-size: 13px;
     padding: 20px;
     position: relative;
     text-align: left;
 }
 
-.first_main_container{
+.first-main-container {
     background-image: url("../images/bg-pattern-quotation.svg");
     background-position: top right;
     background-repeat: no-repeat;
@@ -50,24 +45,24 @@ body{
     position: absolute;
 }
 
-.first_small_container{
+.first-small-container {
     background-color: var(--very-dark-grayish-blue);
     border-radius: 8px;
 }
 
-.second_small_container{
+.second-small-container {
     background-color: var(--white);
     border-radius: 8px;
     box-shadow: var(--btn-box-shadow);
 }
 
-.second_main_container{
+.second-main-container {
     background-color: var(--very-dark-blackish-blue);
     border-radius: 8px;
     grid-column: 2/ span 2;
 }
 
-.side_container{
+.side-container {
     border-radius: 8px;
     background-color: var(--white);
     box-shadow: var(--btn-box-shadow);
@@ -76,7 +71,7 @@ body{
 
 /* image */
 
-img{
+img {
     border-radius: 50px;
     float: left;
     height: 50px;
@@ -86,37 +81,44 @@ img{
     width: 50px;
 }
 
-.profile_name{
+.profile-name {
     padding: 5px;
     padding-left: 20px;
 }
 
-#name{
+.name {
     color: var(--light-gray);
     font-size: 12px;
 }
 
-span{
+span {
     color: var(--light-grayish-blue);
     font-weight: 600;
     font-size: 14px;
 }
 
-#big{
+.big {
     color: var(--light-grayish-blue);
     font-weight: 600;
     font-size: 15px;
 }
 
-.content{
+.content {
     color: var(--light-gray);
     font-size: 13px;
     font-family: var(--main-font);
     justify-content: left;   
 }
 
-#black{
+.black {
     color: rgb(63, 62, 62);
+}
+
+.attribution {
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
 }
 
 

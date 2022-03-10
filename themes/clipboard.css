@@ -1,52 +1,52 @@
-:root{
+:root {
 
     --Dark-Grayish-Blue: hsl(210, 10%, 33%);
     --Grayish-Blue: hsl(201, 11%, 66%);
     --Light-Blue: hsl(233, 100%, 69%);
-    --my-font: "Bai Jamjuree", sans-serif;
+    --my-font:'Bai Jamjuree', sans-serif;
     --Strong-Cyan: hsl(171, 66%, 44%);
 }
 
-*{
+* {
     box-sizing: border-box;
     margin: 0px;
     padding: 0;   
 
 }
 
-body{
-    background-image: url("../images/bg-header-desktop.png");
+body {
+    background-image: url('../images/bg-header-desktop.png');
     background-repeat: no-repeat;
     overflow-x: hidden;
 }
 
-.first{
+.first {
     
     margin-top: 100px;
     text-align: center;
     width: 100%;
 }
 
-header{
+header {
     font-size: 35px;
     font-weight: 600;
     font-family: var(--my-font);
     color: var(--Dark-Grayish-Blue);
 }
 
-.first img{
+.first img {
     height: 150px;
     padding: 30px;
     width: 150px;
 }
 
-h1{
+h1 {
     color: var(--Dark-Grayish-Blue);
     font-family: var(--my-font);
     font-weight: 600;  
 }
 
-p{
+p {
     color: var(--Grayish-Blue);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 400;
@@ -55,7 +55,7 @@ p{
     margin-top: 10px;
 }
 
-.ios{
+.ios {
     border-radius: 20px;
     border: 2px;
     border-color: var(--Strong-Cyan);
@@ -67,14 +67,15 @@ p{
     width: 180px;
 }
 
-.ios:hover{
+.ios:hover {
     background-color: hsl(171,38%, 68%);
 }
 
-.mac:hover{
+.mac:hover {
     background-color: hsl(232, 36%, 78%);
 }
-.mac{
+
+.mac {
     border-radius: 20px;
     border: 2px;
     border-color: var(--Light-Blue);
@@ -87,20 +88,20 @@ p{
     
 }
 
-.second{    
+.second {    
     margin-top: 125px;
     margin-left: 400px;
     text-align: center;
     width: 500px;
 }
 
-.third{   
+.third {   
     margin-top: 50px;
     padding-top: 30px;
     width: 100%;
 }
 
-.third img{
+.third img {
     display: inline;
     float: left;
     height: 400px;
@@ -110,7 +111,7 @@ p{
     width: 600px;   
 }
 
-#third_para{
+.third-para {
     font-family: var(--my-font);
     font-weight: 400;   
     justify-content: left;
@@ -119,32 +120,32 @@ p{
     margin-bottom: 30px;   
 }
 
-h2, h3{
+h2, h3 {
     color: var(--Dark-Grayish-Blue);
     font-family: var(--my-font);
     font-weight: 600;
 }
 
-.fourth{
+.fourth {
     margin-top: 200px;
     padding-top: 40px;
     text-align: center;
     width: 100%;
 }
 
-.fifth{
+.fifth {
     margin-top: 100px;
     text-align: center;
     width: 100%;
 }
 
-.sixth{
+.sixth {
     margin-top: 100px;
     text-align: center;
     width: 100%;
 }
 
-.table_div{
+.table-div {
     align-content: center;
     margin-top: 60px;
     padding-left: 100px;
@@ -152,24 +153,24 @@ h2, h3{
     width: 100%;
 }
 
-tr, td{
+tr, td {
     padding: 30px;
 }
 
-.logo_div{   
+.logo-div {   
     margin-top: 100px;
     padding-left: 150px;
     text-align: center;
     width: 100%;
 }
 
-.last{   
+.last {   
     margin-top: 100px;
     text-align: center;
     width: 100%;
 }
 
-.footer_div{
+.footer-div {
     background-color: hsl(200, 11%, 95%);
     display: grid;
     grid-template-columns: 20% 15% 15% 15% 40%;
@@ -182,25 +183,25 @@ tr, td{
 
 }
 
-.logo{
+.logo {
     text-align: center;
 }
 
-.logo img{
+.logo img {
     height: 40px;
     width: 40px;
 }
 
-li{
+li {
     margin-top: 10px;
 }
 
-a{
+a {
     color: var(--Dark-Grayish-Blue);
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     color: var(--Strong-Cyan);
 }
 .list1, .list2, .list3{  
