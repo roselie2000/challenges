@@ -1,0 +1,355 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
+
+:root {
+  --primary-dark-blue: hsl(240, 38%, 20%);
+  --primary-gray-blue: hsl(240, 18%, 77%);
+}
+
+/* Universal Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* border: 1px red dotted; */
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+button:focus {
+  outline: none;
+}
+
+
+/* Testimonials section */
+
+.testimonials {
+  position: relative;
+}
+
+/* curve background element */
+
+.testimonials::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  height: 75px;
+  width: 100%;
+  background-image: url(../images/pattern-curve.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* slider positioning and background elements */
+
+.slider {
+  background-image: url(../images/pattern-bg.svg);
+  background-repeat: no-repeat;
+  background-position: center 25px;
+  background-size: 325px;
+  min-height: 667px;
+  padding-top: 39px;
+}
+
+.slider::before {
+  content: '';
+  position: absolute;
+  bottom: 250px;
+  left: 50%;
+  height: 60px;
+  width: 60px;
+  background: url(../images/pattern-quotes.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transform: translateX(-50%);
+}
+
+/* Slider Nav Controls */
+
+.slider-nav {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px;
+  border-radius: 40px;
+  width: 80px;
+  top: 290px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  z-index: 10;
+  -webkit-box-shadow: 0px 15px 25px -8px hsla(240, 38%, 20%, 0.2);
+  -moz-box-shadow: 0px 15px 25px -8px hsla(240, 38%, 20%, 0.2);
+  box-shadow: 0px 15px 25px -8px hsla(240, 38%, 20%, 0.2);
+}
+
+.slider-nav button {
+  cursor: pointer;
+  height: 18px;
+  width: 18px;
+  border: none;
+  background-color: transparent;
+}
+
+.slider-nav button:hover .slider-btn, .slider-nav button:focus .slider-btn {
+  stroke: var(--primary-gray-blue);
+}   
+
+/* Slide Styles */
+
+.slide {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  margin: 16px auto;
+  width: 100%;
+  max-width: 310px;
+  z-index: 5;
+}
+
+.slide.active {
+  display: flex;
+}
+
+.slide img {
+  width: 100%;
+  max-width: 255px;
+  border-radius: 5px;
+  margin-bottom: 80px;
+  -webkit-box-shadow: 0px 25px 30px -10px hsla(240, 38%, 20%, 0.4);
+  -moz-box-shadow: 0px 25px 30px -10px hsla(240, 38%, 20%, 0.4);
+  box-shadow: 0px 25px 30px -10px hsla(240, 38%, 20%, 0.4);
+}
+
+.slide-content {
+  text-align: center;
+}
+
+/* Typography */
+
+.quote {
+  font-weight: 300;
+  line-height: 24px;
+  font-size: 18px;
+  color: var(--primary-dark-blue);
+}
+
+.role, .name {
+  font-size: 14px;
+  line-height: 22px;
+
+}
+
+.role {
+  font-weight: 500;
+  color: var(--primary-gray-blue);
+}
+
+.name {
+  margin-top: 16px;
+  font-weight: 700;
+  color: var(--primary-dark-blue);
+}
+
+/* Slide fade in animation */
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: .7s;
+  animation-name: fade;
+  animation-duration: .7s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* *** MEDIA QUERIES *** */
+
+/* Small Screens / Tablets */
+
+@media only screen and (min-width: 768px) {
+
+  .testimonials::after {
+    height: 100px;
+  }
+
+  .slide img {
+    max-width: 310px;
+  }
+
+  .slider {
+    background-size: 390px;
+    padding-top: 44px;
+    min-height: 750px;
+  }
+
+  .slider::before {
+    bottom: 268px;
+  }
+
+  .slider-nav {
+
+    top: 350px;
+  }
+
+  .slide {
+    max-width: 430px;
+    margin: 16px auto;
+  }
+
+  .quote {
+    line-height: 30px;
+    font-size: 24px;  }
+
+  .role, .name {
+    font-size: 18px;
+  }
+
+}
+
+/* Desktops / Laptops */
+
+@media only screen and (min-width: 1024px) {
+
+  .testimonials {
+    padding: 0;
+  }
+
+  .testimonials::after {
+    height: 150px;
+  }
+
+  .slider {
+    position: relative;
+    background-position: 100% 21% ;
+    background-size: 640px;
+    width: 1024px;
+    min-height: 800px;
+    margin: 0 auto;
+    padding-top: 0;
+  }
+
+  .slider::before {
+    position: absolute;
+    height: 80px;
+    width: 100px;
+    left: 132px;
+    bottom: unset;
+    top: 190px;
+    transform: unset;
+  }
+
+  .slide {
+    position: relative;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 900px;
+    height: 800px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+  }
+
+  .slide img {
+    width: 500px;
+    max-width: unset;
+    margin-bottom: 0;
+  }
+
+  .slide-content {
+    position: absolute;
+    left: 0;
+    text-align: left;
+    width: 478px;
+  }
+
+  .slider-nav {
+    padding: 18px 18px;
+    border-radius: 40px;
+    width: 110px;
+    top: unset;
+    bottom: 172px;
+    left: 50%;
+    transform: translateX(40px);
+  }
+
+  .quote {
+    margin-bottom: 24px;
+  }
+
+  .name, .role {
+    display: inline-block;
+  }
+
+  .role {
+    margin-left: 10px;
+  }
+
+}
+
+/* Large Screens */
+
+@media only screen and (min-width: 1300px) {
+
+  .slider {
+    background-position: 99% 35% ;
+    background-size: 700px;
+    width: 1300px;
+    min-height: 800px;
+  }
+
+  .slider::before {
+    height: 100px;
+    width: 120px;
+    left: 190px;
+    top: 218px;
+  }
+
+  .slide {
+    width: 100%;
+    max-width: 1110px;
+    padding-bottom: 34px;
+  }
+
+  .slide img {
+    width: 540px;
+  }
+
+  .slide-content {
+    width: 632px;
+  }
+
+  .slider-nav {
+    bottom: 120px;
+    left: 50%;
+    transform: translateX(76px);
+  }
+
+  .quote {
+    font-size: 32px;
+    line-height: 44px;
+    padding-top: 73px;
+  }
+
+  .name, .role {
+    font-size: 20px;
+  }
+
+}
