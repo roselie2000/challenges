@@ -214,7 +214,10 @@
     }
   }
   
-  .attribution{
-    position: relative;
-    margin-top: 80px;
+  .attribution {
+    font-size: 14px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
   }

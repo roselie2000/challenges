@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="../themes/todo.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Josefin+Sans:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Public+Sans:wght@300;400;700&family=Red+Hat+Text:wght@700&family=Rubik:ital,wght@0,500;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Todo app</title>
+  </head>
+  <body class="theme" data-theme="dark">
+    <div class="container">
+      <div class="banner">
+        <div class="content">
+          <h1>Todo</h1>
+          <div>
+            <img src="../images/icon-sun.svg" alt="sun" id="sun" />
+            <img src="../images/icon-moon.svg" id="moon" />
+          </div>
+        </div>
+        <div class="todo">
+          <form>
+            <input type="text" placeholder="Create a new todo.." id="text" />
+          </form>
+          <div class="list">
+            <div class="todo-con"></div>
+          </div>
+          <div class="info">
+            <p class="left">items left</p>
+            <div class="choice">
+              <p class="active">All</p>
+              <p id="Act">Active</p>
+              <p id="com">Completed</p>
+            </div>
+            <p class="clear">Clear Completed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../script/todo.js"></script>
+  </body>
+</html>
