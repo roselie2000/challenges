@@ -1,323 +1,329 @@
-html, body{
-  width: 100vw;
+html, body {
   height: 100vh;
   min-height: 100vh;
   min-width: 100vw;
+  width: 100vw;
 }
 
-*{
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
+
 body {
-  background-color: hsl(230, 100%, 99%);
   background: url(../images/bg-pattern.svg) top -120px left 0px no-repeat;
+  background-color: hsl(230, 100%, 99%);
   overflow-x: hidden;
   overflow-y: scroll;
-  }
+}
+
+h1 {
+  color: hsl(227, 35%, 25%);
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+  text-align: center;
+}
+
+h4 {
+  color: hsl(225, 20%, 60%);
+  font-family: 'Manrope', sans-serif;
+  text-align: center;
+}
+
+.main {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 5px 10px 8px 10px rgba(211, 226, 226, 0.5);
+  height: 50%;
+  margin-bottom: 40px;
+  margin-left: 20%;
+  margin-top: 8%;
+  padding: 30px;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.heading {
+  background: url("../images/pattern-circles.svg") center no-repeat;
+  background-size: 100px 100px;
+  height: 100px;
+  margin-top: 15px;
+  padding-top: 30px;
+}
+
+.Rate {
+  align-items: center;
+  display: flex;
+  font-family: "Manrope", sans-serif;
+  height: 25%;
+  justify-content: space-between;
+  text-align: center;
+  width: 100%;
+}
+
+#p1 {
+  display: flex;
+}
+
+#dollar,
+#price {
+  color: hsl(227, 35%, 25%);
+  font-family: 'Manrope', sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+}
+
+#month {
+  color: hsl(225, 20%, 60%);
+  font-family: 'Manrope', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+#preview {
+  color: hsl(225, 20%, 60%);
+  font-family: 'Manrope', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+input[type="range"] {
+  appearance: none;
+  background: var(hsl(227, 69%, 85%));
+  border-radius: 5px;
+  height: 10px;
+  -webkit-appearance: none;
+  width: 100%;
+}
+
+.Range {
+  display: flex;
+  flex-direction: column;
+  height: 40px;
+  justify-content: center;
+  margin-bottom: 2em;
+  width: 100%;
+}
+
+.slider {
+  background: linear-gradient(
+    to right,
+    hsl(174, 77%, 80%) 0%,
+    hsl(174, 77%, 80%) 50%,
+    hsl(224, 65%, 95%) 51%,
+    hsl(224, 65%, 95%) 100%
+  );
+  display: inline-block;
+  height: 1px;
+  outline: none;
+  width: 85%;
+  -webkit-appearance: none;
+}
+
+.slider::-webkit-slider-thumb {
+  align-self: center;
+  background-color: hsl(174, 86%, 45%, 0.7);
+  border-radius: 25px;
+  box-shadow: 3px 5px 2px rgba(16, 213, 194, 0.3);
+  height: 2rem;
+  width: 2rem;
+  -webkit-appearance: none;
+  z-index: 5;
+}
+
+.slider::-webkit-slider-thumb:hover {
+  background-color: rgb(16, 213, 194);
+  cursor: pointer;
+}
+
+.toggle_div{
+  align-items: center;
+  border-bottom: 2px solid hsl(224, 65%, 95%);
+  color: hsl(225, 20%, 60%);
+  display: flex;
+  font-family: 'Manrope', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  gap: 8px;
+  height: 40px;
+  justify-content: flex-end;    
+  padding-top: 5px;
+  padding-bottom: 15px;
+  width: 100%;
+}
+
+.toggle {
+  border-radius: var(--height);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  width: var(--width);
+  --width: 45px;
+  height: var(--height); 
+  --height: calc(var(--width) / 2);
+}
+
+.toggle input {
+  display: none;
+}
+
+.toggle .btn {
+  border-radius: var(--height);
+  background-color: #ccc;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: all 0.4s ease-in-out;
+  width: 100%;
+}
+
+.toggle .btn::before {
+  background-color: hsl(223, 50%, 87%);
+  border-radius: calc(var(--height) / 2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+  content: '';
+  height: calc(var(--height));
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: all 0.4s ease-in-out;
+  width: calc(var(--height));
+}
+
+.toggle input:checked+.btn {
+  background-color: hsl(174, 77%, 80%);
+}
+
+.toggle input:checked+.btn::before {
+  transform: translateX(calc(var(--width) - var(--height)));
+}
+
+#disc::after {
+  background-color: hsl(14, 92%, 95%);
+  border-radius: 9px;
+  content: "25% discount";
+  color: hsl(15, 100%, 70%);
+  font-size: 13px;
+  padding: 3px;
+}
+
+.checked {
+  color: hsl(225, 20%, 60%);
+  display: flex;
+  font-family: 'Manrope', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  height: 100%;
+  justify-content: space-between;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+  text-align: left;
+}
+
+ul li {
+  margin-left: 0px;
+  margin-top: 10px;
+}
+
+button {
+  background-color: hsl(227, 35%, 25%);
+  border: 0px;
+  border-radius: 20px;
+  color: hsl(225, 20%, 60%);
+  cursor: pointer;
+  font-family: 'Manrope', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  height: 40px;
+  margin-top: 18px;
+  margin-right: 4px; 
+  width: 150px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 450px) {
 
   h1 {
-    text-align: center;
-    color: hsl(227, 35%, 25%);
-    font-family: 'Manrope', sans-serif;
-    font-weight: 800;
+    font-size: 20px;
   }
 
   h4 {
-    text-align: center;
-    color: hsl(225, 20%, 60%);
-    font-family: 'Manrope', sans-serif;
-  }
-
-  .main {
-    width: 50%;
-    height: 50%;
-    background-color: white;
-    vertical-align: middle;
-    padding: 30px;
-    margin-left: 20%;
-    margin-top: 8%;
-    margin-bottom: 40px;
-    border-radius: 10px;
-    box-shadow: 5px 10px 8px 10px rgba(211, 226, 226, 0.5);
+    font-size: 15px;
+    line-height: 20px;
+    margin-left: 30px;
+    margin-top: 10px;
+    width: 80%;
   }
 
   .heading {
-    padding-top: 30px;
+    background: url("../images/pattern-circles.svg") top center no-repeat;
+    background-size: 130px 130px;
+    height: 150px;
+    margin-top: 50px; 
+    padding-top: 10px;
+  }
+
+  .main {
+    height: 65%;
     margin-top: 15px;
-    height: 100px;
-    background: url("../images/pattern-circles.svg") center no-repeat;
-    background-size: 100px 100px;
+    margin-left: 25px;
+    width: 85%;
   }
 
   .Rate {
-    height: 25%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: space-between;
-    font-family: "Manrope", sans-serif;
-  }
-
-  #p1{
-    display: flex;
-  }
-
-  #dollar,
-  #price {
-    font-size: 25px;
-    text-align: center;
-    font-weight: 700;
-    color: hsl(227, 35%, 25%);
-    font-family: 'Manrope', sans-serif;
-  }
-
-  #month{
-    text-align: center;
-    font-size: 20px;
-    font-weight: 700;
-    color: hsl(225, 20%, 60%);
-    font-family: 'Manrope', sans-serif;
-  }
-
-  #preview {
-    text-align: center;
-    font-size: 20px;
-    font-weight: 700;
-    color: hsl(225, 20%, 60%);
-    font-family: 'Manrope', sans-serif;
-  }
-
-  input[type="range"] {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 100%;
-    height: 10px;
-    border-radius: 5px;
-    background: var(hsl(227, 69%, 85%));
-  }
-
-  .Range {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    height: 40px;
-    margin-bottom: 2em;
+    height: 20%;
   }
 
-  .slider {
-    -webkit-appearance: none;
-    width: 85%;
-    height: 1px;
-
-    background: linear-gradient(
-      to right,
-      hsl(174, 77%, 80%) 0%,
-      hsl(174, 77%, 80%) 50%,
-      hsl(224, 65%, 95%) 51%,
-      hsl(224, 65%, 95%) 100%
-    );
-
-    display: inline-block;
-    outline: none;
-    /* border-radius: 25px; */
+  #dollar, 
+  #price {
+    font-size: 20px;
   }
 
-  .slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    height: 2rem;
-    width: 2rem;
-    align-self: center;
-    background-color: hsl(174, 86%, 45%, 0.7);
-    box-shadow: 3px 5px 2px rgba(16, 213, 194, 0.3);
-    border-radius: 25px;
-    z-index: 5;
-  }
-  .slider::-webkit-slider-thumb:hover {
-    cursor: pointer;
-    background-color: rgb(16, 213, 194);
-  }
-.toggle_div{
-    width: 100%;
-    height: 40px;
-    padding-top: 5px;
-    padding-bottom: 15px;
-    display: flex;
-    gap: 8px;
-    align-items: center;
-    justify-content: flex-end;    
-    color: hsl(225, 20%, 60%);
-    font-family: 'Manrope', sans-serif;
-    font-size: 15px;
-    font-weight: 500;
-    border-bottom: 2px solid hsl(224, 65%, 95%);
-}
-  .toggle {
-    --width: 45px;
-    --height: calc(var(--width) / 2);
-
-    position: relative;
-    display: inline-block;
-    width: var(--width);
-    height: var(--height);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
-    border-radius: var(--height);
-    cursor: pointer;
+  .toggle_div {
+    padding-bottom: 60px;
+    padding-top: 30px;
   }
 
-  .toggle input {
-    display: none;
+  .preview {
+    margin-bottom: 10px;
+    text-align: center;
   }
 
-  .toggle .btn {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: var(--height);
-    background-color: #ccc;
-    transition: all 0.4s ease-in-out;
-  }
-
-  .toggle .btn::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: calc(var(--height));
-    height: calc(var(--height));
-    border-radius: calc(var(--height) / 2);
-    background-color: hsl(223, 50%, 87%);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
-    transition: all 0.4s ease-in-out;
-  }
-
-  .toggle input:checked+.btn {
-    background-color: hsl(174, 77%, 80%);
-  }
-
-  .toggle input:checked+.btn::before {
-    transform: translateX(calc(var(--width) - var(--height)));
+  .checked {
+    flex-direction: column;
+    height: 40%;
   }
 
   #disc::after {
-    content: "25% discount";
-    color: hsl(15, 100%, 70%);
-    background-color: hsl(14, 92%, 95%);
-    border-radius: 9px;
-    padding: 3px;
-    font-size: 13px;
-  }
-  .checked{
-      width: 100%;
-      height: 100%;
-      padding: 20px;
-      display: flex;
-      justify-content: space-between;
-      text-align: center;
-      color: hsl(225, 20%, 60%);
-      font-family: 'Manrope', sans-serif;
-      font-size: 15px;
-      font-weight: 500;
-  }
-  ul{
-      list-style-type: none;
-      text-align: left;
-      padding: 0px;
+    content: "-25%";
   }
 
-  ul li{
-      margin-left: 0px;
-      margin-top: 10px;
-  }
-
-  button{
-      width: 150px;
-      height: 40px;
-      border: 0px;
-      border-radius: 20px;
-      margin-top: 18px;
-      margin-right: 4px;
-      color: hsl(225, 20%, 60%);
-      font-family: 'Manrope', sans-serif;
-      font-size: 15px;
-      font-weight: 500;
-      background-color: hsl(227, 35%, 25%);
-      cursor: pointer;
-  }
-
-  .attribution {
-    font-size: 11px;
+  ul {
     text-align: center;
   }
-  .attribution a {
-    color: hsl(228, 45%, 44%);
+
+  ul li {
+    font-size: 18px;
   }
-
-  @media screen and (max-width: 450px){
-
-    h1{
-      font-size: 20px;
-    }
-
-    h4{
-      width: 80%;
-      font-size: 15px;
-      line-height: 20px;
-      margin-left: 30px;
-      margin-top: 10px;
-    }
-
-    .heading{
-      height: 150px;
-      padding-top: 10px;
-      margin-top: 50px;
-      background: url("../images/pattern-circles.svg") top center no-repeat;
-      background-size: 130px 130px;
-    }
-    .main{
-      margin-top: 15px;
-      margin-left: 25px;
-      width: 85%;
-      height: 65%;
-    }
-
-    .Rate{
-      flex-direction: column;
-      height: 20%;
-    }
-    #dollar, #price{
-      font-size: 20px;
-    }
-
-    .toggle_div{
-      padding-bottom: 60px;
-      padding-top: 30px;
-    }
-
-    .preview{
-      text-align: center;
-      margin-bottom: 10px;
-    }
-
-    .checked{
-      flex-direction: column;
-      height: 40%;
-    }
-    #disc::after{
-      content: "-25%";
-    }
-
-    ul{
-      text-align: center;
-    }
-
-    ul li{
-      font-size: 18px;
-    }
-  }
-  
+}

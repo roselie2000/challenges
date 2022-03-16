@@ -4,53 +4,53 @@
     --Grayish-Blue: hsl(233, 8%, 62%);
     --Lime-Green: hsl(136, 65%, 51%);
     --Light-Grayish-Blue: hsl(220, 16%, 96%);
+    --myfont: 'Public Sans', sans-serif;
     --Very-Light-Gray: hsl(0, 0%, 98%);
     --White: hsl(0, 0%, 100%);
-    --myfont: 'Public Sans', sans-serif;
 }
 
 * {
+    box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
 }
 
 nav {
-    width: 100%;
-    height: 75px;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
+    display: flex;
+    height: 75px;
+    justify-content: space-between;
     padding-left: 130px;
     padding-right: 130px;
+    width: 100%;
 }
 
 .logo {
-    width: 90px;
     height: 30px;
+    width: 90px;
 }
 
 .dropdown-toggle {
-    display: none;
-    outline: none;
-    border: none;
     background: transparent;
+    border: none;
     cursor: pointer;
+    display: none;
+    outline: none;    
 }
 .list a {
-    text-decoration: none;
-    display: inline;
     color: var(--Grayish-Blue);
+    display: inline;
     font-family: var(--myfont);
-    font-weight: 400;
     font-size: 15px;
+    font-weight: 400;
     margin-right: 15px;
     padding-bottom: 25px;
+    text-decoration: none;
 }
 
 .list a:hover {
-    color: var(--Dark-Blue);
     border-bottom: 3px solid var(--Lime-Green);
+    color: var(--Dark-Blue);
 }
 
 nav ul li {
@@ -58,15 +58,14 @@ nav ul li {
 }
 
 .req-btn {
-    width: 130px;
-    height: 35px;
-    border-radius: 20px;
-    border: 0px;
-    color: var(--White);
-    outline: none;
     background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    border: 0px;
+    border-radius: 20px;
+    color: var(--White);
     cursor: pointer;
-
+    height: 35px;
+    outline: none;
+    width: 130px;
 }
 
 .req-btn:hover {
@@ -74,11 +73,11 @@ nav ul li {
 }
 
 .top-div {
+    background-color: var(--Very-Light-Gray);
     background-image: url(../images/image-mockups.png), url(../images/bg-intro-desktop.svg);
+    background-position: right -85px top -100px, right -165px top -100px;
     background-repeat: no-repeat, no-repeat;
     background-size: 650px 800px, 900px 700px;
-    background-position: right -85px top -100px, right -165px top -100px;
-    background-color: var(--Very-Light-Gray);
     height: 550px;
     padding-left: 130px;
     padding-top: 100px;
@@ -88,43 +87,43 @@ nav ul li {
 
 .heading-1{
     color: var(--Dark-Blue);
-    font-size: 50px;
-    margin-bottom: 30px;
-    font-weight: 400;
     font-family: var(--myfont);
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 30px;
 }
 
 .para{
-    font-size: small;
     color: var(--Grayish-Blue);
     font-family: var(--myfont);
+    font-size: small;
     margin-bottom: 30px;
 }
 
 .reason{
-    width: 100%;
-    height: 650px;  
     background-color: var(--Light-Grayish-Blue);
     color: var(--Grayish-Blue);
+    height: 650px;  
     padding-left: 130px;
     padding-right: 130px;
     padding-top: 100px;
+    width: 100%;
     z-index: 199;
 }
 
 .heading-2{
-    font-size: 35px;
-    font-family: var(--myfont);
-    font-weight: 400;
     color: var(--Dark-Blue);
+    font-family: var(--myfont);
+    font-size: 35px;
+    font-weight: 400;
     margin-bottom: 30px;
 }
 
 .grid-container{
-    width: 100%;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     gap: 15px;
+    width: 100%;
 }
 
 .grid-images{
@@ -133,25 +132,25 @@ nav ul li {
 }
 
 .heading-3{
-    font-size: 20px;
-    font-family: var(--myfont);
     color: var(--Dark-Blue);
+    font-family: var(--myfont);
+    font-size: 20px;
     margin-bottom: 30px;
 }
 
 .lst-articles {
-    width: 100%;
-    height: 650px;
     background-color: var(--Very-Light-Gray);
+    height: 650px;
     padding-left: 130px;
     padding-right: 130px;
     padding-top: 100px;
+    width: 100%;
 }
 
 .grid-2-images {
-    width: 271px;
     height: 200px;
     margin-bottom: 20px;
+    width: 271px;
 }
 
 .currency,
@@ -168,10 +167,10 @@ h3 {
 }
 
 h3 {
-    font-size: 18px;
     color: var(--Dark-Blue);
-    font-weight: 400;
     cursor: pointer;
+    font-size: 18px;
+    font-weight: 400;
 }
  
 h3:hover {
@@ -183,27 +182,27 @@ h3:hover {
 }
 
 .footer {
-    background-color: var(--Dark-Blue);
-    width: 100%;
-    height: 150px;
-    display: grid;
-    grid-template-columns: 25% 12% 12% 50%;
     align-items: center;
+    background-color: var(--Dark-Blue);
+    display: grid;
+    height: 150px;
+    grid-template-columns: 25% 12% 12% 50%;
     padding-left: 130px;
     padding-right: 130px;
+    width: 100%;
 }
 
 .footer a {
-    text-decoration: none;
     color: var(--White);
     font-family: var(--myfont);
+    text-decoration: none;
 }
 
 .social-media{
-    display: grid;
-    grid-template-columns: 25px 25px 25px 25px 25px;
-    grid-row-gap: 40px;
     font-family: var(--myfont);
+    display: grid;
+    grid-row-gap: 40px;
+    grid-template-columns: 25px 25px 25px 25px 25px;
 }
 
 .social-media .logo{
@@ -227,14 +226,14 @@ h3:hover {
 }
 
 .btn p{
-    margin-top: 30px;
     color: var(--Grayish-Blue);
+    margin-top: 30px;
 }
 
 .attribution {
+    background-color: var(--Dark-Blue);
     font-size: 11px;
     text-align: center;
-    background-color: var(--Dark-Blue);
 }
 .attribution a {
     color: hsl(229, 41%, 95%);
@@ -242,19 +241,19 @@ h3:hover {
 
 @media screen and (max-width: 765px) {
     .list {
-        position: absolute;
-        top: 100px;
-        display: flex;
-        justify-content: center;
         align-items: center;
-        flex-direction: column;
         background: var(--White);
-        width: 80%;
-        padding: 40px;
         border-radius: 10px;
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         opacity: 0;
+        padding: 40px;
+        position: absolute;
+        text-align: center;
+        top: 100px;
         transition: all .5s ease-in-out;
+        width: 80%;
     }
 
     nav .list li {
@@ -263,8 +262,8 @@ h3:hover {
 
     nav .list li a {
         color: var(--Dark-Blue);
-        font-weight: 900;
         font-size: 20px;
+        font-weight: 900;
     }
 
     nav li a {

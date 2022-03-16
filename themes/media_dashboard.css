@@ -1,110 +1,106 @@
-.container[data-theme="dark"]{
-    --main-bg:hsl(230, 17%, 14%);
-    --Card-BG: hsl(228, 28%, 20%);
+.container[data-theme="dark"] {
     --Blue-Text: hsl(228, 34%, 66%);
+    --Card-BG: hsl(228, 28%, 20%);
+    --main-bg:hsl(230, 17%, 14%);
     --Text-color: hsl(0, 0%, 100%);
     --toggle-color: linear-gradient(hsl(210, 78%, 56%), hsl(146, 68%, 55%));
 }
 
-.container[data-theme="light"]{
-    --main-bg:hsl(0, 0%, 100%);
-    --Card-BG: hsl(227, 47%, 96%);
+.container[data-theme="light"] {
     --Blue-Text: hsl(228, 12%, 44%);
+    --Card-BG: hsl(227, 47%, 96%);
+    --main-bg:hsl(0, 0%, 100%);
     --Text-color: hsl(230, 17%, 14%);
     --toggle-color: hsl(230, 22%, 74%);
 }
 
-*{
+* {
+    box-sizing: border-box;
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
-    box-sizing: border-box;
 }
 
-.html, body{
-    width: 100vw;
-    height: 100vh;
+.html, body {
     background-color: var(--main-bg);
     background-size: cover ;
     background-repeat: no-repeat;
+    height: 100vh;
     overflow-x: hidden;
+    width: 100vw;
 }
 
-.head{
-    width: 100%;
-    height: 20%;
+.head {
     border-bottom-left-radius: 20px;
     display: flex;
-    justify-content: space-between;
-    padding-top: 50px;
+    font-family: 'Inter', sans-serif;
+    font-size: medium;
+    font-weight: 400;
+    height: 20%;
+    justify-content: space-between;color: var(--Blue-Text);
     padding-left: 250px;
     padding-right: 250px;
-    margin-bottom: 50px;
-    color: var(--Blue-Text);
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-size: medium;
+    padding-top: 50px;
+    margin-bottom: 50px;   
+    width: 100%;
     z-index: 1;
 }
 
-.head span{
+.head span {
     color: var(--Text-color);
+    font-family: 'Inter', sans-serif;
     font-size: 30px;
     font-weight: 700;
-    font-family: 'Inter', sans-serif;
 }
 
-.toggle_div{
-    height: 40px;
-    padding-top: 5px;
-    padding-bottom: 15px;
-    display: flex;
-    gap: 8px;
+.toggle_div {
     align-items: center;
-    justify-content: flex-end;    
     color: hsl(225, 20%, 60%);
+    display: flex;
     font-family: 'Manrope', sans-serif;
     font-size: 15px;
     font-weight: 500;
+    justify-content: flex-end;       
+    height: 40px;
+    padding-top: 5px;
+    padding-bottom: 15px;
 }
-  .toggle {
-    --width: 35px;
-    --height: calc(var(--width) / 2);
 
-    position: relative;
-    display: inline-block;
-    width: var(--width);
-    height: var(--height);
+.toggle {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
     border-radius: var(--height);
     cursor: pointer;
-  }
+    --height: calc(var(--width) / 2);
+    height: var(--height);
+    position: relative;
+    --width: 35px;
+    width: var(--width);
+}
 
-  .toggle input {
+.toggle input {
     display: none;
-  }
+}
 
-  .toggle .btn {
+.toggle .btn {
+    background-image: var(--toggle-color);
+    border-radius: var(--height);
+    height: 100%;
+    left: 0;
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: var(--height);
-    background-image: var(--toggle-color);
     transition: all 0.4s ease-in-out;
+    width: 100%;
   }
 
   .toggle .btn::before {
+    background-color: hsl(230, 17%, 14%);
+    border-radius: calc(var(--height) / 0.5);
     content: '';
+    height: calc(var(--height)); 
+    left: 0;
     position: absolute;
     top: 0;
-    left: 0;
-    width: calc(var(--height));
-    height: calc(var(--height));
-    border-radius: calc(var(--height) / 0.5);
-    background-color: hsl(230, 17%, 14%);
-    /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3); */
     transition: all 0.4s ease-in-out;
+    width: calc(var(--height));
   }
 
   .toggle input:checked+.btn {
@@ -115,207 +111,204 @@
     transform: translateX(calc(var(--width) - var(--height)));
   }
 
-  .media{
-      width: 100%;
-      height: 50%;
-      z-index: 2;
-      margin-top: 20px;
-      display: grid;
-      grid-template-columns: 23% 23% 23% 23%;
-      gap: 3%;
-      padding-left: 250px;
-      padding-right: 250px;
+  .media {
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%;
+    gap: 3%;
+    height: 50%;
+    margin-top: 20px;
+    padding-left: 250px;
+    padding-right: 250px;
+    width: 100%;
+    z-index: 2;
   }
 
-  .facebook{
-      background: url("../images/icon-facebook.svg") top 20px left 30px no-repeat;
-      background-color: var(--Card-BG);
-      display: grid;
-      grid-template-rows: 25% 35% 15% 25%;
-      padding: 10px;
-      border-top: 4px solid hsl(208, 92%, 53%);
-      border-radius: 5px;
+  .facebook {
+    background: url("../images/icon-facebook.svg") top 20px left 30px no-repeat;
+    background-color: var(--Card-BG);
+    border-radius: 5px;
+    border-top: 4px solid hsl(208, 92%, 53%);
+    display: grid;
+    grid-template-rows: 25% 35% 15% 25%;
+    padding: 10px; 
   }
 
-  .twitter{
+  .twitter {
     background: url("../images/icon-twitter.svg") top 20px left 30px no-repeat;
     background-color: var(--Card-BG);
+    border-radius: 5px;
+    border-top: 4px solid hsl(208, 92%, 53%);
     display: grid;
     grid-template-rows: 25% 35% 15% 25%;
     padding: 10px;
-    border-top: 4px solid hsl(208, 92%, 53%);
-    border-radius: 5px;
-
 }
 
-.instagram{
+.instagram {
     background: url("../images/icon-instagram.svg") top 20px left 30px no-repeat;
     background-color: var(--Card-BG);
+    border-radius: 5px;
+    border-top: 4px solid hsl(329, 70%, 58%);
     display: grid;
     grid-template-rows: 25% 35% 15% 25%;
-    padding: 10px;
-    border-top: 4px solid hsl(329, 70%, 58%);
-    border-radius: 5px;
+    padding: 10px;   
 }
 
-.youtube{
+.youtube {
     background: url("../images/icon-youtube.svg") top 20px left 30px no-repeat;
     background-color: var(--Card-BG);
+    border-radius: 5px;
+    border-top: 4px solid hsl(348, 97%, 39%);
     display: grid;
     grid-template-rows: 25% 35% 15% 25%;
     padding: 10px;
-    border-top: 4px solid hsl(348, 97%, 39%);
-    border-radius: 5px;
-
 }
 
-.name{
-    margin-left: 55px;
-    margin-top: 12px;
+.name {
     color: var(--Blue-Text);
     font-family: 'Inter', sans-serif;
     font-size: x-small;
     font-weight: 400;
+    margin-left: 55px;
+    margin-top: 12px;
 }
 
-.nums{
+.nums {
+    color: var(--Text-color);
     font-family: 'Inter', sans-serif;
     font-size: 50px;
-    color: var(--Text-color);
-    text-align: center;
     font-weight: 700;
+    text-align: center;
 }
 
-.followers{
-    font-size: small;
+.followers {
+    color: var(--Blue-Text);
     font-family: 'Inter', sans-serif;
+    font-size: small;
     font-weight: 400;
     letter-spacing: 2px;
     margin-top: 10px;
     text-align: center;
-    color: var(--Blue-Text);
 }
 
-.status-green{
-    font-family: 'Inter', sans-serif;
-    font-size: xx-small;
-    text-align: center;
-    margin-top: 13px;
-    color: hsl(163, 72%, 41%);
+.status-green {
     background: url("../images/icon-up.svg") top 5px left 50px no-repeat;
-   
-}
-
-.status-red{
+    color: hsl(163, 72%, 41%);
     font-family: 'Inter', sans-serif;
     font-size: xx-small;
+    margin-top: 13px;  
     text-align: center;
-    margin-top: 13px;
+}
+
+.status-red {
     background: url("../images/icon-down.svg") top 5px left 50px no-repeat;
     color: hsl(356, 69%, 56%);
+    font-family: 'Inter', sans-serif;
+    font-size: xx-small;
+    margin-top: 13px;
+    text-align: center;
 }
 
-.overview{
-    width: 100%;
+.overview {
+    display: grid;
+    gap: 3%;
+    grid-template-columns: 23% 23% 23% 23%;
+    grid-template-rows: 50% 50%;
     height: 50%;
     margin-top: 30px;
     padding-left: 250px;
     padding-right: 250px;
-    display: grid;
-    grid-template-columns: 23% 23% 23% 23%;
-    grid-template-rows: 50% 50%;
-    gap: 3%;
+    width: 100%;
 }
 
-.heading{
-    margin-left: 250px;
-    margin-top: 30px;
+.heading {
+    color: var(--Text-color);
     font-size: 25px;
     font-weight: 700;
     font-family: 'Inter', sans-serif;
-    color: var(--Text-color);
+    margin-left: 250px;
+    margin-top: 30px;
 }
 
-.views{
+.views {
+    background-color: var(--Card-BG);
+    border-radius: 5px;
+    column-gap: 30px;
     display: grid;
     height: 100px;
     grid-template-columns: 50% 50%;
-    column-gap: 30px;
     margin-bottom: 20px;
     padding-bottom: 30px;
     padding-top: 20px;
-    padding-left: 20px;
-    border-radius: 5px;
-    background-color: var(--Card-BG);
+    padding-left: 20px;   
 }
 
 
-.name2{
+.name2 {
     color: var(--Blue-Text);
     font-family: 'Inter', sans-serif;
     font-size: x-small;
     font-weight: 400;
 }
 
-.num2{
+.num2 {
+    color: var(--Text-color);
     font-family: 'Inter', sans-serif;
     font-size: 23px;
     font-weight: 700;
-    color: var(--Text-color);
 }
 
-.status_green{
+.status_green {
+    color: hsl(163, 72%, 41%);
     font-family: 'Inter', sans-serif;
     font-size: xx-small;
     margin-top: 13px;
-    color: hsl(163, 72%, 41%);
 }
 
 .status_red{
+    color: hsl(356, 69%, 56%);
     font-family: 'Inter', sans-serif;
     font-size: xx-small;
     margin-top: 13px;
-    color: hsl(356, 69%, 56%);
 }
 
 @media screen and (max-width: 450px){
 
     .head{
+        align-items: center;
         flex-direction: column;
+        justify-content: left;
         padding-left: 30px;
         padding-right: 30px;
-        align-items: center;
-        justify-content: left;
     }
 
     .toggle_div{
-        width: 100%;
+        font-size: medium;
+        justify-content: space-between;
+        margin-top: 20px;
         padding-left: 30px;
         padding-right: 30px;
-        margin-top: 20px;
-        justify-content: space-between;
-        font-size: medium;
+        width: 100%;
     }
 
     .media{
         grid-template-columns: 100%;
+        justify-content: center;
         padding-left: 30px;
         padding-right: 30px;
-        justify-content: center;
     }
 
     .facebook, .twitter, .instagram, .youtube{
-        width: 100%;
         height: 200px;
         padding-left: 20px;
         padding-right: 20px;
+        width: 100%;
     }
 
     .heading{
-        width: 100%;
         margin-top: 100px;
-        text-align: left;
         margin-left: 30px;
+        text-align: left;
+        width: 100%;
     }
 
     .facebook{
@@ -323,17 +316,17 @@
     }
 
     .overview{
-        width: 100%;
-        padding-left: 30px;
-        padding-right: 30px;
+        gap: 10px;
         grid-template-columns: 100%;
         grid-template-rows: auto;
-        gap: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        width: 100%;
     }
     .views{
-        width: 100%;
         padding-left: 50px;
         padding-right: 50px;
+        width: 100%;
     }
 
     .name{
@@ -341,15 +334,15 @@
     }
 
     .status-green{
-        font-size: 13px;
-        color: hsl(163, 72%, 41%);
         background: url("../images/icon-up.svg") top 5px left 120px no-repeat;
+        color: hsl(163, 72%, 41%);
+        font-size: 13px;
     }
 
     .status-red{
         background: url("../images/icon-down.svg") top 5px left 110px no-repeat;
-        margin-right: 15px;
         color: hsl(356, 69%, 56%);   
+        margin-right: 15px;
     }
 
     .images, .status_green, .status_red{
@@ -357,10 +350,3 @@
         margin-right: 30px;
     }
 }
-
-
-
-
-
-
-
