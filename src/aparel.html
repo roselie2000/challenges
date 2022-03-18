@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 
   <title>Frontend Mentor | Base Apparel coming soon page</title>
-  
+
 </head>
 <body>
   <section>
@@ -25,12 +25,16 @@
       <div class="contentbox">
 
         <h1><span>We're</span><br> coming<br> soon</brr></h1>
-        <p>Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcemnets and our launch deals.</p>
+
+        <p>Hello fellow shoppers! We're currently building our new fashion store. 
+          Add your email below to stay up-to-date with announcemnets and our launch deals.</p>
+
         <form class="inputfield" name="myform">
           <input type="text" name="email" placeholder="Email Address" required>
           <img src="../images/icon-error.svg" alt="error" id="err">
           <button type="button" onclick="validation()"><img src="../images/icon-arrow1.svg" alt="arrow"></button>
         </form>
+
         <div id="msg">Please provide a valid email</div>
       </div>
 
@@ -39,23 +43,7 @@
     <div class="rightcolumn"></div>
   </section>
 
-  <script>
-    function validation(){
-      let email = document.myform.email;
-      if (
-            email.value.indexOf("@") == -1 ||
-            email.value.indexOf(".") == -1
-          ) {
-            document.getElementById("err").style.opacity = 1;
-            document.getElementById("msg").style.opacity = 1;
-            return;
-          } else {
-            document.getElementById("err").style.opacity = 0;
-            document.getElementById("msg").style.opacity = 0;
-            email.value = "";
-          }
-    }
-  </script>
+  <script src="../script/aparel.js"></script>
 
 </body>
 </html>

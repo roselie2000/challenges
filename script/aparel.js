@@ -1,23 +1,15 @@
-const input = document.getElementById("email-input");
-
-const button = document
-  .getElementById("submit-button")
-  .addEventListener("click", () => {
-    const pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
-
-    input.value.match(pattern) ? removeErrors() : displayError();
-  });
-
-function removeErrors() {
-  return document.querySelectorAll(".visible").forEach((obj) => {
-    obj.classList.remove("visible");
-    obj.classList.add("invisible");
-  });
-}
-
-function displayError() {
-  return document.querySelectorAll(".invisible").forEach((obj) => {
-    obj.classList.remove("invisible");
-    obj.classList.add("visible");
-  });
+function validation(){
+  let email = document.myform.email;
+  if (
+        email.value.indexOf("@") == -1 ||
+        email.value.indexOf(".") == -1
+      ) {
+        document.getElementById("err").style.opacity = 1;
+        document.getElementById("msg").style.opacity = 1;
+        return;
+      } else {
+        document.getElementById("err").style.opacity = 0;
+        document.getElementById("msg").style.opacity = 0;
+        email.value = "";
+      }
 }

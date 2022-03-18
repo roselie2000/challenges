@@ -81,20 +81,6 @@
       <a href="https://twitter.com/alexcamachogz">Alejandra Camacho</a>.
     </div>
 
-    <script>
-      const shareButton = document.getElementById("share-button");
-      const shareMedia = document.getElementById("social-media");
-      const returnButton = document.getElementById("return-button");
-
-      shareButton.addEventListener("click", () => {
-        shareMedia.classList.toggle("active");
-      });
-
-      returnButton.addEventListener("click", () => {
-        if (shareMedia.classList.contains("active")) {
-          shareMedia.classList.remove("active");
-        }
-      });
-    </script>
+    <script src="../script/article.js"></script>
   </body>
 </html>

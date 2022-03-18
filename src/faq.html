@@ -104,36 +104,7 @@
       </div>
     </div>
 
-    <script>
-      var flag = true;
-      var element;
-      function Onclick(elementID, ArrID, qID) {
-        element = document.getElementById(elementID);
-        let arrow = document.getElementById(ArrID);
-        arrow.classList.toggle("rotating");
-        document.getElementById(qID).classList.toggle("active_font");
-
-        if (flag) {
-          show();
-          // arrow.style.transform = "rotate(180deg)";
-        } else {
-          // arrow.style.transform = "rotate(180deg)";
-          hide();
-        }
-      }
-
-      function show() {
-        element.style.display = "block";
-        // arrow.style.transform = "rotate(180deg)";
-        flag = false;
-      }
-
-      function hide() {
-        element.style.display = "none";
-        // arrow.style.transform = "rotate(180deg)";
-        flag = true;
-      }
-    </script>
+    <script src="../script/faq.js"></script>
 
     <div class="attribution">
       Challenge by
