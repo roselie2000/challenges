@@ -230,6 +230,10 @@ h3:hover {
     margin-top: 30px;
 }
 
+.media-logo {
+    cursor: pointer;
+}
+
 .attribution {
     background-color: var(--Dark-Blue);
     font-size: 11px;
