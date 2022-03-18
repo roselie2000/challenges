@@ -16,17 +16,8 @@
       href="https://fonts.google.com/specimen/Space+Mono"
     />
     <link rel="stylesheet" href="../themes/tipcalc.css" />
-    <title>Frontend Mentor | Tip calculator app</title>
 
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <title>Frontend Mentor | Tip calculator app</title>
   </head>
   <body>
     <div class="logo"><img src="../images/logo6.svg" alt="" /></div>
@@ -36,20 +27,24 @@
         <label for="">Bill</label>
         <input type="number" class="input bill-input" id="bill-input" />
         <label for="">Select Tip %</label>
+
         <div class="tip">
           <div class="tips tip-5">5%</div>
           <div class="tips tip-10">10%</div>
           <div class="tips tip-15 active-tip">15%</div>
           <div class="tips tip-25">25%</div>
           <div class="tips tip-50">50%</div>
+
           <div id="tip_custom">
             <input type="number" class="tip-custom" placeholder="CUSTOM" />
           </div>
         </div>
+
         <div class="peopleLabel">
           <label for="">Number of People &nbsp;</label>
           <label for="" class="error">Can't be zero</label>
         </div>
+
         <input type="number" class="input people-input" />
       </div>
 
@@ -59,6 +54,7 @@
             <p>Tip Amount</p>
             <p class="person">/ person</p>
           </div>
+
           <div class="amount" id="tip-amount">$4.27</div>
         </div>
 
@@ -67,6 +63,7 @@
             <p>Total</p>
             <p class="person">/ person</p>
           </div>
+
           <div class="amount" id="total-amount">$32.79</div>
         </div>
 
@@ -74,12 +71,6 @@
       </div>
     </div>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
     <script src="../script/tipcalc.js"></script>
   </body>
 </html>
