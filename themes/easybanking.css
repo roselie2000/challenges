@@ -2,8 +2,8 @@
     --Bright-Cyan: hsl(192, 70%, 51%);
     --Dark-Blue: hsl(233, 26%, 24%);
     --Grayish-Blue: hsl(233, 8%, 62%);
-    --Lime-Green: hsl(136, 65%, 51%);
     --Light-Grayish-Blue: hsl(220, 16%, 96%);
+    --Lime-Green: hsl(136, 65%, 51%);
     --myfont: 'Public Sans', sans-serif;
     --Very-Light-Gray: hsl(0, 0%, 98%);
     --White: hsl(0, 0%, 100%);
@@ -85,7 +85,7 @@ nav ul li {
 
 }
 
-.heading-1{
+.heading-1 {
     color: var(--Dark-Blue);
     font-family: var(--myfont);
     font-size: 50px;
@@ -93,14 +93,14 @@ nav ul li {
     margin-bottom: 30px;
 }
 
-.para{
+.para {
     color: var(--Grayish-Blue);
     font-family: var(--myfont);
     font-size: small;
     margin-bottom: 30px;
 }
 
-.reason{
+.reason {
     background-color: var(--Light-Grayish-Blue);
     color: var(--Grayish-Blue);
     height: 650px;  
@@ -111,7 +111,7 @@ nav ul li {
     z-index: 199;
 }
 
-.heading-2{
+.heading-2 {
     color: var(--Dark-Blue);
     font-family: var(--myfont);
     font-size: 35px;
@@ -119,19 +119,19 @@ nav ul li {
     margin-bottom: 30px;
 }
 
-.grid-container{
+.grid-container {
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
     gap: 15px;
+    grid-template-columns: 25% 25% 25% 25%;
     width: 100%;
 }
 
-.grid-images{
-    margin-top: 15px;
+.grid-images {
     margin-bottom: 15px;
+    margin-top: 15px;
 }
 
-.heading-3{
+.heading-3 {
     color: var(--Dark-Blue);
     font-family: var(--myfont);
     font-size: 20px;
@@ -162,8 +162,8 @@ nav ul li {
 
 h6,
 h3 {
-    margin-left: 10px;
     margin-bottom: 20px;
+    margin-left: 10px;
 }
 
 h3 {
@@ -177,8 +177,8 @@ h3:hover {
     color: var(--Lime-Green);
 }
 .para p {
-    margin-left: 10px;
     margin-bottom: 20px;
+    margin-left: 10px;
 }
 
 .footer {
@@ -198,14 +198,14 @@ h3:hover {
     text-decoration: none;
 }
 
-.social-media{
+.social-media {
     font-family: var(--myfont);
     display: grid;
     grid-row-gap: 40px;
     grid-template-columns: 25px 25px 25px 25px 25px;
 }
 
-.social-media .logo{
+.social-media .logo {
     grid-column: 1/ span 6;
 }
 
@@ -213,7 +213,7 @@ h3:hover {
     list-style-type: none;
 }
 
-.list1 li{
+.list1 li {
     margin-bottom: 10px;
 }
 
@@ -221,11 +221,11 @@ h3:hover {
     color: var(--Lime-Green);
 }
 
-.btn{
+.btn {
     text-align: right;
 }
 
-.btn p{
+.btn p {
     color: var(--Grayish-Blue);
     margin-top: 30px;
 }
@@ -235,6 +235,7 @@ h3:hover {
     font-size: 11px;
     text-align: center;
 }
+
 .attribution a {
     color: hsl(229, 41%, 95%);
 }

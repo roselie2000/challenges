@@ -1,4 +1,4 @@
-*{
+* {
   box-sizing: border-box;
   font-size: 15px;
   font-family: 'Josefin Sans', sans-serif;
@@ -6,7 +6,7 @@
   padding: 0;
 }
 
-section{
+section {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
@@ -16,11 +16,11 @@ section{
   width: 100%;
 }
 
-section .moblogo{
+section .moblogo {
   display: none;
 }
 
-section .leftcolumn{
+section .leftcolumn {
   align-items: center;
   background-image: url(../images/bg-pattern-desktop-apparel.svg);
   background-position: center;
@@ -32,7 +32,7 @@ section .leftcolumn{
   position: relative;
 }
 
-section .logo{
+section .logo {
   left: 12rem;
   position: absolute;
   top: 3rem;
@@ -40,14 +40,13 @@ section .logo{
   z-index: 2;
 }
 
-section .leftcolumn .contentbox{
+.contentbox {
   margin-left: -3rem;
   position: relative;
   width: 50%;
-
 }
 
-section .leftcolumn .contentbox h1{
+.contentbox h1 {
   color: hsl(0, 6%, 24%) ;
   font-size: 4rem;
   font-weight: 600;
@@ -55,7 +54,7 @@ section .leftcolumn .contentbox h1{
   text-transform: uppercase;
 }
 
-section .leftcolumn .contentbox h1 span{
+.contentbox h1 span {
   color: hsl(0, 36%, 70%);
   font-size: 4rem;
   font-weight: 300;
@@ -63,7 +62,7 @@ section .leftcolumn .contentbox h1 span{
   text-transform: uppercase;
 }
 
-section .leftcolumn .contentbox p{
+.contentbox p {
   color: hsl(0, 36%, 70%);
   font-size: 1rem;
   font-weight: 300;
@@ -71,7 +70,7 @@ section .leftcolumn .contentbox p{
   padding: 1rem 0 2rem;
 }
 
-.inputfield{
+.inputfield {
   align-items: center;
   border-radius: 2rem;
   border: 1px solid hsl(0, 36%, 70%);
@@ -81,7 +80,7 @@ section .leftcolumn .contentbox p{
   width: 100%;
 }
 
-input{
+input {
   background: transparent;
   border: none;
   color: hsl(0, 36%, 70%);
@@ -90,11 +89,11 @@ input{
   
 }
 
-input::placeholder{
+input::placeholder {
   color: hsl(0, 36%, 70%);
 }
 
-.inputfield button{
+.inputfield button {
   align-items: center;
   border-radius: 2rem;
   border: none;
@@ -109,22 +108,22 @@ input::placeholder{
   top: 0;
 }
 
-#err{
-   opacity: 0;
+#err {
+  opacity: 0;
 }
 
-#msg{
+#msg {
   padding: 15px;
   text-align: left;
   color: red;
   opacity: 0;
 }
 
-.inputfield button img{
+.inputfield button img {
   width: .6rem;
 }
 
-section .rightcolumn{
+section .rightcolumn {
   background-image: url(../images/hero-desktop.jpg);
   background-position: center;
   background-size: cover;
@@ -133,12 +132,12 @@ section .rightcolumn{
   position: relative;  
 }
 
-.inputfield button:hover{
+.inputfield button:hover {
   box-shadow: 0 1rem 1rem .5rem rgba(0, 0, 0, 0.13);
   background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 80%, 86%));
 } 
 
-@media (max-width: 991px){
+@media (max-width: 991px) {
   section {
     align-items: center;
     display: flex;
@@ -153,7 +152,7 @@ section .rightcolumn{
     display: none;
   }
 
-  section .moblogo{
+  section .moblogo {
     align-items: center;
     background: hsla(0, 80%, 86%, 0.089);
     flex-basis: 100%;
@@ -161,7 +160,7 @@ section .rightcolumn{
     display: flex;
   }
 
-  section .moblogo img{
+  section .moblogo img {
     transform: scale(0.6);
       
   }
@@ -182,26 +181,26 @@ section .rightcolumn{
     position: relative;  
   }
 
-  section .leftcolumn .contentbox {
+  .contentbox {
     margin-left: 0rem;
     position: relative;
     text-align: center;
     width: 80%;
   }
 
-  section .leftcolumn .contentbox h1 {
+  .contentbox h1 {
     font-size: 2rem;
   }
 
-  section .leftcolumn .contentbox h1 span {
+  .contentbox h1 span {
     font-size: 2rem;
   }
 
-  section .leftcolumn .contentbox p {
+  .contentbox p {
     font-size: .9rem;
   }
 
-  section .leftcolumn .contentbox .inputfield button {
+  .inputfield button {
     padding: 1.05rem 1.8rem;
   }
 

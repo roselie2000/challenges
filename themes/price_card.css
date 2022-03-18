@@ -120,8 +120,8 @@ input[type="range"] {
   display: inline-block;
   height: 1px;
   outline: none;
-  width: 85%;
   -webkit-appearance: none;
+  width: 85%;
 }
 
 .slider::-webkit-slider-thumb {
@@ -130,8 +130,8 @@ input[type="range"] {
   border-radius: 25px;
   box-shadow: 3px 5px 2px rgba(16, 213, 194, 0.3);
   height: 2rem;
-  width: 2rem;
   -webkit-appearance: none;
+  width: 2rem;
   z-index: 5;
 }
 
@@ -151,8 +151,8 @@ input[type="range"] {
   gap: 8px;
   height: 40px;
   justify-content: flex-end;    
-  padding-top: 5px;
   padding-bottom: 15px;
+  padding-top: 5px;
   width: 100%;
 }
 
@@ -173,8 +173,8 @@ input[type="range"] {
 }
 
 .toggle .btn {
-  border-radius: var(--height);
   background-color: #ccc;
+  border-radius: var(--height);
   height: 100%;
   left: 0;
   position: absolute;

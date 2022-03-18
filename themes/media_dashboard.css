@@ -89,9 +89,9 @@
     top: 0;
     transition: all 0.4s ease-in-out;
     width: 100%;
-  }
+}
 
-  .toggle .btn::before {
+.toggle .btn::before {
     background-color: hsl(230, 17%, 14%);
     border-radius: calc(var(--height) / 0.5);
     content: '';
@@ -101,29 +101,29 @@
     top: 0;
     transition: all 0.4s ease-in-out;
     width: calc(var(--height));
-  }
+}
 
-  .toggle input:checked+.btn {
+.toggle input:checked+.btn {
     background-color: hsl(230, 22%, 74%);
-  }
+}
 
-  .toggle input:checked+.btn::before {
+.toggle input:checked+.btn::before {
     transform: translateX(calc(var(--width) - var(--height)));
-  }
+}
 
-  .media {
+.media {
     display: grid;
-    grid-template-columns: 23% 23% 23% 23%;
     gap: 3%;
+    grid-template-columns: 23% 23% 23% 23%;
     height: 50%;
     margin-top: 20px;
     padding-left: 250px;
     padding-right: 250px;
     width: 100%;
     z-index: 2;
-  }
+}
 
-  .facebook {
+.facebook {
     background: url("../images/icon-facebook.svg") top 20px left 30px no-repeat;
     background-color: var(--Card-BG);
     border-radius: 5px;
@@ -131,9 +131,9 @@
     display: grid;
     grid-template-rows: 25% 35% 15% 25%;
     padding: 10px; 
-  }
-
-  .twitter {
+}
+ 
+.twitter {
     background: url("../images/icon-twitter.svg") top 20px left 30px no-repeat;
     background-color: var(--Card-BG);
     border-radius: 5px;
@@ -222,9 +222,9 @@
 
 .heading {
     color: var(--Text-color);
+    font-family: 'Inter', sans-serif;
     font-size: 25px;
     font-weight: 700;
-    font-family: 'Inter', sans-serif;
     margin-left: 250px;
     margin-top: 30px;
 }
@@ -241,7 +241,6 @@
     padding-top: 20px;
     padding-left: 20px;   
 }
-
 
 .name2 {
     color: var(--Blue-Text);
@@ -305,8 +304,8 @@
     }
 
     .heading{
-        margin-top: 100px;
         margin-left: 30px;
+        margin-top: 100px;
         text-align: left;
         width: 100%;
     }

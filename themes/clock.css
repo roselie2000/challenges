@@ -9,11 +9,11 @@ body {
     font-family: "Red Hat Text", sans-serif;
 }
 
-img{
+img {
     max-width: 100%;
 }
 
-ul{
+ul {
     list-style-type: none;
 }
 
@@ -22,8 +22,8 @@ ul{
 }
 
 .hills {
-    position: absolute;
     bottom: 0;
+    position: absolute;
 }
 
 .container {
