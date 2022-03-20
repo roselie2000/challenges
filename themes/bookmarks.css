@@ -1,0 +1,467 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(239, 243, 247, 0.3);
+    font-family: 'Rubik', sans-serif;
+    overflow-x: hidden;
+}
+
+nav {
+    color: hsl(229, 31%, 21%);
+    display: flex;
+    font-size: 15px;
+    font-weight: 400;
+    height: 10%;
+    padding-bottom: 30px;
+    padding-left: 130px;
+    padding-right: 100px;
+    padding-top: 60px;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-left: 450px;
+}
+
+nav ul li{
+    cursor: pointer;
+    display: inline;
+    margin-left: 50px;
+}
+
+nav ul li:hover {
+    color: hsl(0, 94%, 66%);
+}
+
+nav button {
+    background-color: hsl(0, 94%, 66%);
+    border: 0px solid;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    height: 30px;
+    outline: none;
+    width: 70px;
+}
+
+nav button:hover {
+    background-color: white;
+    border: 2px solid hsl(0, 94%, 66%);
+    color: hsl(0, 94%, 66%);
+}
+
+.heading { 
+    background-image: url(../images/illustration-hero1.svg), url(../images/big-dot.png);
+    background-position: right 80px top 0px, right -105px top 60px;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 550px 350px, 600px 400px;
+    height: 400px;
+    margin-right: 80px;
+    margin-top: 70px;
+    padding-left: 130px;
+    width: 100%;
+}
+
+.heading h1 {
+    color: hsl(229, 31%, 21%);
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+p {
+    color: hsl(229, 8%, 60%);
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.heading button {
+    border: 0px solid;
+    border-radius: 5px;
+    height: 35px;
+    margin-right: 10px;
+    outline: none;
+    width: 150px;
+}
+
+.btn-chrome {
+    background-color: hsl(231, 69%, 60%);
+    box-shadow: 2px 0px 5px hsl(231, 62%, 85%);
+    color: white;
+    cursor: pointer;
+}
+
+.btn-chrome:hover {
+    background-color: white;
+    border: 2px solid hsl(231, 69%, 60%);
+    color: hsl(231, 69%, 60%);
+}
+
+.btn-firefox {
+    background-color: hsl(228, 9%, 90%);
+    box-shadow: 2px 0px 3px hsl(229, 8%, 60%);
+    color: hsl(229, 31%, 21%);
+    cursor: pointer;
+}
+
+.btn-firefox:hover {
+    background-color: white;
+    border: 2px solid hsl(229, 31%, 21%);
+    color: hsl(229, 31%, 21%);
+}
+
+.features {
+    height: 150px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
+}
+
+h3 {
+    color: hsl(229, 31%, 21%);
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.slide-menu {
+    align-items: center;
+    border-bottom: 1px solid gray;
+    height: 28px;
+    margin: auto;
+    padding-left: 30px;
+    text-align: center;
+    width: 45%;
+}
+
+.slide-menu ul li {
+    color: hsl(229, 31%, 21%);
+    cursor: pointer;
+    display: inline;
+    font-weight: 500;
+    margin-right: 50px;
+    padding-bottom: 8px;
+}
+
+.slide-menu ul li:hover {
+    color: hsl(0, 94%, 66%);
+}
+
+.active {
+    border-bottom: 2px solid hsl(0, 94%, 66%);
+}
+
+.content {
+    background-image: url(../images/big-dot.png);
+    background-position-x: -180px;
+    background-position-y: 180px;
+    background-repeat: no-repeat;
+    background-size: 600px 400px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 500px;
+    padding-left: 150px;
+    padding-top: 50px;
+    width: 100%;
+}
+
+.content img {
+    float: left;
+    height: 350px;
+    width: 500px;
+}
+
+#images {
+    background-image: url(../images/illustration-features-tab-1.svg);
+    background-position-x: 20px;
+    background-repeat: no-repeat;
+    background-size: 450px 350px;
+}
+
+.info {
+    margin-top: 50px;
+}
+
+.info h2 {
+    color: hsl(229, 31%, 21%);
+    font-size: 28px;
+}
+
+.more-info {
+    background-color: hsl(231, 69%, 60%);
+    border: 0px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    height: 33px;
+    outline: none;
+    width: 90px;
+}
+
+.download {
+    height: 650px;
+    width: 100%;
+}
+.head {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    height: 370px;
+    margin: auto;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.grid-container img {
+    height: 70px;
+    margin-bottom: 30px;
+    width: 70px;
+}
+
+.grid-container h4 {
+    color: hsl(229, 31%, 21%);
+    margin-bottom: 10px;
+}
+
+.grid-container h5 {
+    color: hsl(229, 8%, 60%);
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+
+.grid-container button {
+    background-color: hsl(231, 69%, 60%);
+    border: 2px solid;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    height: 35px;
+    outline: none;
+    width: 90%;
+}
+
+.chrome, .firefox, .opera {
+    background-color: white;
+    background-image: url(../images/bg-dots.svg);
+    background-position-y: 200px;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    height: 290px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.firefox {
+    margin-top: 30px;
+}
+
+.opera {
+    margin-top: 60px;
+}
+
+.faq-div {
+    height: auto;
+    margin: auto;
+    padding-bottom: 50px;
+    padding-top: 30px;
+    width: 50%;
+}
+
+.faq-div img {
+    height: 10px;
+    width: 10px;
+}
+
+.faq-div h3 {
+    text-align: center;
+}
+
+.faq-div > p {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.faq-div button {
+    margin-left: 45%;
+    margin-top: 20px;
+}
+
+.faq p {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.rotating {
+    transform: rotate(180deg);
+}
+
+.Questions {
+    color: hsl(229, 31%, 21%);
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.Questions:active {
+    color: hsl(0, 94%, 66%);
+}
+
+.Answer {
+    display: none;
+}
+
+span {
+    float: right;
+}
+
+.signup {
+    background-color: hsl(231, 69%, 60%);
+    height: 300px;
+    padding-top: 40px;
+    text-align: center;
+    width: 100%;
+}
+
+.signup h6 {
+    color: white;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+}
+
+.signup p {
+    color: white;
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.signup input[type=text] {
+    background-repeat: no-repeat;
+    background-position: top 5px right 10px;
+    background-size: 15px 15px;
+    border: 0px solid;
+    border-radius: 5px;
+    height: 30px;
+    outline: none;
+    padding-left: 10px;
+    width: 280px;
+}
+  
+#msg {
+    background-color: hsl(0, 94%, 66%);
+    color: white;
+    font-size: 10px;
+    height: 20px;
+    margin-left: 477px;
+    margin-top: -3px;
+    opacity: 0;
+    padding: 3px;
+    text-align: left;
+    width: 200px;
+}
+
+.signup input::placeholder{
+    color: hsl(229, 8%, 60%);
+}
+
+.signup button {
+    background-color: hsl(0, 94%, 66%);
+    border: 0px solid;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    height: 30px;
+    margin-left: 10px;
+    outline: none;
+    width: 100px;
+}
+
+.signup button:hover {
+    background-color: white;
+    border: 2px solid hsl(0, 94%, 66%);
+    color: hsl(0, 94%, 66%);
+}
+
+.footer {
+    align-items: center;
+    background-color: hsl(229, 31%, 21%);
+    display: flex;
+    height: 80px;
+    padding-left: 130px;
+    margin-right: 100px;
+    width: 100%;
+}  
+
+.footer img {
+    height: 35px;
+    margin-right: 100px;
+    width: 120px;
+}
+
+.footer ul {
+    list-style-type: none;
+}
+
+.footer ul li {
+    color: white;
+    cursor: pointer;
+    display: inline;
+    margin-right: 30px;
+}
+
+.footer ul li:hover {
+    color: hsl(0, 94%, 66%);
+}
+
+.media {
+    margin-left: 450px;
+}
+
+.fa {
+    color: hsl(229, 31%, 21%);
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa-facebook {
+    background-color: white;
+    border-radius: 3px;
+    color: hsl(229, 31%, 21%);
+    font-size: 17px;
+    padding-bottom: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+}
+
+.fa-facebook:hover {
+    background-color: hsl(0, 94%, 66%);
+}
+
+.fa-twitter {
+    color: white;
+    font-size: 20px;
+}
+
+.fa-twitter:hover {
+    color: hsl(0, 94%, 66%);
+}
+
+.active_font{
+    font-weight: 500;
+}

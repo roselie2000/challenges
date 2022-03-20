@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon-32x32.png"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Josefin+Sans:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Public+Sans:wght@300;400;700&family=Red+Hat+Text:wght@700&family=Rubik:ital,wght@0,400;0,500;1,300;1,400&family=Spartan:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../themes/bookmarks.css" />
+
+    <title>Frontend Mentor | Bookmark landing page</title>
+  </head>
+  <body>
+    <nav>
+      <img src="../images/logo-bookmark.svg" alt="logo" class="logo" />
+      <div class="menu">
+        <ul>
+          <li>FEATURES</li>
+          <li>PRICING</li>
+          <li>CONTACT</li>
+          <li><button>Login</button></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="heading">
+        <h1>A Simple Bookmark <br />Manager</h1>
+
+        <p>
+          A clean and simple interface to organize your favourite
+          <br />websites. Open a new browser tab and see your sites load
+          <br />instantly. Try it for free.
+        </p>
+
+        <button class="btn-chrome">Get it on Chrome</button>
+        <button class="btn-firefox">Get it on Firefox</button>
+      </div>
+
+      <div class="features">
+        <h3>Features</h3>
+
+        <p>
+          Our aim is to make it quick and easy for you to access your
+          <br />favourite websites. Your bookmarks sync between your devices
+          <br />so you can access them on the go.
+        </p>
+      </div>
+
+      <div class="slider-div">
+        <div class="slide-menu">
+          <ul>
+            <li id="tab1" class="active">Simple Bookmarking</li>
+            <li id="tab2">Speedy Searching</li>
+            <li id="tab3">Easy Sharing</li>
+          </ul>
+        </div>
+
+        <div class="content">
+          <div id="images"></div>
+
+          <div class="info">
+            <h3 id="topic">Bookmark in one click</h3>
+
+            <p id="details">
+              Organize your bookmarks however you like. Our <br />simple
+              drag-and-drop interface gives you complete <br />control over how
+              you manage your favourite sites.
+            </p>
+
+            <button class="more-info">More Info</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="download">
+        <div class="head">
+          <h3>Download the extension</h3>
+
+          <p>
+            We’ve got more browsers in the pipeline. Please do let us know if<br />
+            you’ve got a favourite you’d like us to prioritize.
+          </p>
+        </div>
+
+        <div class="grid-container">
+          <div class="chrome">
+            <img src="../images/logo-chrome.svg" alt="chrome" />
+            <h4>Add to Chrome</h4>
+            <h5>Minimum version 62</h5>
+            <button>Add & Install Extension</button>
+          </div>
+
+          <div class="firefox">
+            <img src="../images/logo-firefox.svg" alt="firefox" />
+            <h4>Add to Firefox</h4>
+            <h5>Minimum version 55</h5>
+            <button>Add & Install Extension</button>
+          </div>
+
+          <div class="opera">
+            <img src="../images/logo-opera.svg" alt="opera" />
+            <h4>Add to Opera</h4>
+            <h5>Minimum version 46</h5>
+            <button>Add & Install Extension</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-div">
+        <h3>Frequently Asked Questions</h3>
+
+        <p>
+          Here are some of our FAQs. If you have any other questions <br />you’d
+          like answered please feel free to email us.
+        </p>
+
+        <div class="faq">
+          <hr />
+
+          <p class="Questions" id="Q1" onclick="Onclick('A1', 'arr1', 'Q1');">
+            What is Bookmark?
+            <span>
+              <img src="../images/icon-arrow4.svg" alt="arrow" id="arr1" />
+            </span>
+          </p>
+
+          <p class="Answer" id="A1">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+            tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum
+            quis quam ornare mattis.
+          </p>
+
+          <hr />
+
+          <p class="Questions" id="Q2" onclick="Onclick('A2', 'arr2', 'Q2');">
+            How can I request a new browser?
+            <span>
+              <img src="../images/icon-arrow4.svg" alt="arrow" id="arr2" />
+            </span>
+          </p>
+
+          <p class="Answer" id="A2">
+            Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+            ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros
+            aliquet convallis ultricies. Mauris augue massa, ultricies non
+            ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis
+            ultricies. Mauris augue massa, ultricies non ligula. Suspendisse
+            imperdiet.
+          </p>
+
+          <hr />
+
+          <p class="Questions" id="Q3" onclick="Onclick('A3', 'arr3', 'Q3');">
+            Is there a mobile app?
+            <span>
+              <img src="../images/icon-arrow4.svg" alt="arrow" id="arr3" />
+            </span>
+          </p>
+
+          <p class="Answer" id="A3">
+            Sed consectetur quam id neque fermentum accumsan. Praesent luctus
+            vestibulum dolor, ut condimentum urna vulputate eget. Cras in ligula
+            quis est pharetra mattis sit amet pharetra purus. Sed sollicitudin
+            ex et ultricies bibendum.
+          </p>
+
+          <hr />
+
+          <p class="Questions" id="Q4" onclick="Onclick('A4', 'arr4', 'Q4');">
+            What about other Chromium browsers?
+            <span>
+              <img src="../images/icon-arrow4.svg" alt="arrow" id="arr4" />
+            </span>
+          </p>
+
+          <p class="Answer" id="A4">
+            Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat
+            mi, at euismod dui. Aliquam vitae neque eget nisl gravida
+            pellentesque non ut velit. More Info 35,000+ already joined Stay
+            up-to-date with what we’re doing Contact Us Features Pricing Contact
+          </p>
+        </div>
+
+        <button class="more-info">More Info</button>
+      </div>
+
+      <div class="signup">
+        <h6>35,000 + Already Joined</h6>
+
+        <p>
+          Stay up to date with what <br />
+          we are doing
+        </p>
+
+        <form class="inputfield" name="myform">
+          <input
+            type="text"
+            name="email"
+            placeholder="Email Address"
+            required
+            id="email"
+          />
+
+          <button type="button" onclick="validation()">Contact us</button>
+        </form>
+
+        <div id="msg">Whoops!, make sure it's an email</div>
+      </div>
+
+      <div class="footer">
+        <img src="../images/logo-bookmark.svg" alt="logo" class="logo" />
+
+        <ul class="menu">
+          <li>FEATURES</li>
+          <li>PRICING</li>
+          <li>CONTACT</li>
+        </ul>
+
+        <ul class="media">
+          <li><a href="#" class="fa fa-facebook"></a></li>
+          <li><a href="#" class="fa fa-twitter"></a></li>
+        </ul>
+      </div>
+    </main>
+
+    <script src="../script/bookmarks.js"></script>
+  </body>
+</html>
