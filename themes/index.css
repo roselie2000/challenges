@@ -1,8 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-html{
+html,
+body {
     background-image: url("../images/index_bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    box-sizing: border-box;
+    height: 100wh;
+    overflow-x: hidden;
+    width: 100vw;
 }
 
 h1{
@@ -15,39 +25,34 @@ h3{
     color: rgb(255, 255, 255);
     font-weight: 750;
     font-size: 30px;
+    margin-top: 20px;
     text-align: center;
 }
 
 h2 {
     font-size: 22px;
 }
-table{
-    align-content: center;
-    padding: 30px;
-    margin-left: 40px;
-    width: 100%;
+
+.grid-container {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: 25% 25% 25% 25%;
+    row-gap: 50px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    padding-right: 230px;
+    padding-top: 50px;
+    width: 100vw;
 }
 
-td{
-    align-content: center;
-    height: 330px;
-    width: 25%;
-    padding: 20px;
-}
-
-
-    
-
-div{
+.grid-container > div {
     background-color: hsl(204, 67%, 92%);
     border-radius: 20px;
     box-shadow: 5px 10px 20px hsl(240, 1%, 34%);
-    height: 80%;
+    height: 100%;
     padding: 10px;
     position: relative;
     text-align: center;
-    width: 60%;
-
 }
 
 a{
@@ -71,17 +76,16 @@ img{
 
 }
 
-@media only screen and (max-width: 400px) {
-
-    td {
-        height: 200px;
+@media only screen and (max-width: 450px) {
+    .grid-container {
+        gap: 20px;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        padding-left: 20px;
+        padding-right: 70px;
+        row-gap: 20px;
     }
-    img {
-        width: 90%;
-        height: 50%;
-    }
 
-    h2{
-        font-size: 10px;
+    h2 {
+        font-size: 13px;
     }
 }
