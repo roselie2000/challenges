@@ -2,8 +2,8 @@
     --Bright-Cyan: hsl(192, 70%, 51%);
     --Dark-Blue: hsl(233, 26%, 24%);
     --Grayish-Blue: hsl(233, 8%, 62%);
-    --Light-Grayish-Blue: hsl(220, 16%, 96%);
     --Lime-Green: hsl(136, 65%, 51%);
+    --Light-Grayish-Blue: hsl(220, 16%, 96%);
     --myfont: 'Public Sans', sans-serif;
     --Very-Light-Gray: hsl(0, 0%, 98%);
     --White: hsl(0, 0%, 100%);
@@ -13,6 +13,15 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+}
+
+html, 
+body {
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    width: 100vw;
 }
 
 nav {
@@ -32,18 +41,32 @@ nav {
 
 .dropdown-toggle {
     background: transparent;
+    background-image: url(../images/icon-hamburger.svg);
     border: none;
     cursor: pointer;
     display: none;
-    outline: none;    
+    height: 20px;
+    outline: none;
+    width: 20px;
 }
+
+.list {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+    position: static;
+    width: 90%;
+}
+
 .list a {
     color: var(--Grayish-Blue);
-    display: inline;
+    display: inline-block;
     font-family: var(--myfont);
-    font-size: 15px;
     font-weight: 400;
+    font-size: 15px;
     margin-right: 15px;
+    margin-top: 15px;
     padding-bottom: 25px;
     text-decoration: none;
 }
@@ -77,30 +100,29 @@ nav ul li {
     background-image: url(../images/image-mockups.png), url(../images/bg-intro-desktop.svg);
     background-position: right -85px top -100px, right -165px top -100px;
     background-repeat: no-repeat, no-repeat;
-    background-size: 650px 800px, 900px 700px;
-    height: 550px;
+    background-size: 650px 700px, 900px 700px;
+    height: 580px;
     padding-left: 130px;
     padding-top: 100px;
     z-index: 299;
-
 }
 
-.heading-1 {
+.heading-1{
     color: var(--Dark-Blue);
-    font-family: var(--myfont);
     font-size: 50px;
     font-weight: 400;
-    margin-bottom: 30px;
-}
-
-.para {
-    color: var(--Grayish-Blue);
     font-family: var(--myfont);
-    font-size: small;
     margin-bottom: 30px;
 }
 
-.reason {
+.para{
+    color: var(--Grayish-Blue);
+    font-size: small;
+    font-family: var(--myfont);
+    margin-bottom: 30px;
+}
+
+.reason{
     background-color: var(--Light-Grayish-Blue);
     color: var(--Grayish-Blue);
     height: 650px;  
@@ -111,27 +133,27 @@ nav ul li {
     z-index: 199;
 }
 
-.heading-2 {
+.heading-2{
     color: var(--Dark-Blue);
-    font-family: var(--myfont);
     font-size: 35px;
+    font-family: var(--myfont);
     font-weight: 400;
     margin-bottom: 30px;
 }
 
-.grid-container {
+.grid-container{
     display: grid;
     gap: 15px;
     grid-template-columns: 25% 25% 25% 25%;
     width: 100%;
 }
 
-.grid-images {
+.grid-images{
     margin-bottom: 15px;
     margin-top: 15px;
 }
 
-.heading-3 {
+.heading-3{
     color: var(--Dark-Blue);
     font-family: var(--myfont);
     font-size: 20px;
@@ -168,14 +190,15 @@ h3 {
 
 h3 {
     color: var(--Dark-Blue);
-    cursor: pointer;
     font-size: 18px;
     font-weight: 400;
+    cursor: pointer;
 }
  
 h3:hover {
     color: var(--Lime-Green);
 }
+
 .para p {
     margin-bottom: 20px;
     margin-left: 10px;
@@ -185,8 +208,8 @@ h3:hover {
     align-items: center;
     background-color: var(--Dark-Blue);
     display: grid;
-    height: 150px;
     grid-template-columns: 25% 12% 12% 50%;
+    height: 150px;
     padding-left: 130px;
     padding-right: 130px;
     width: 100%;
@@ -198,14 +221,14 @@ h3:hover {
     text-decoration: none;
 }
 
-.social-media {
-    font-family: var(--myfont);
+.social-media{
     display: grid;
-    grid-row-gap: 40px;
+    font-family: var(--myfont);
     grid-template-columns: 25px 25px 25px 25px 25px;
+    grid-row-gap: 40px;
 }
 
-.social-media .logo {
+.social-media .logo{
     grid-column: 1/ span 6;
 }
 
@@ -213,7 +236,7 @@ h3:hover {
     list-style-type: none;
 }
 
-.list1 li {
+.list1 li{
     margin-bottom: 10px;
 }
 
@@ -221,17 +244,13 @@ h3:hover {
     color: var(--Lime-Green);
 }
 
-.btn {
+.btn{
     text-align: right;
 }
 
-.btn p {
+.btn p{
     color: var(--Grayish-Blue);
     margin-top: 30px;
-}
-
-.media-logo {
-    cursor: pointer;
 }
 
 .attribution {
@@ -239,39 +258,82 @@ h3:hover {
     font-size: 11px;
     text-align: center;
 }
-
 .attribution a {
     color: hsl(229, 41%, 95%);
 }
 
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 600px) {
+    .dropdown-toggle {
+      display: block;
+    }
+
+    nav {
+        justify-content: space-between;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .req-btn {
+        display: none;
+    }
+
     .list {
         align-items: center;
-        background: var(--White);
+        background-color: rgb(255, 255, 255);
         border-radius: 10px;
+        box-shadow: 20px 20px 260px grey;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        opacity: 0;
-        padding: 40px;
-        position: absolute;
-        text-align: center;
+        position: fixed;
         top: 100px;
-        transition: all .5s ease-in-out;
-        width: 80%;
+        width: 95%;
+    }
+    
+    .list a {
+      color: hsl(206, 37%, 13%);
+      display: block;
+      font-size: 22px;
     }
 
-    nav .list li {
-        margin: 20px 0;
+    .hide {
+        display: none;
     }
 
-    nav .list li a {
-        color: var(--Dark-Blue);
-        font-size: 20px;
-        font-weight: 900;
+    .top-div {
+        background-image: url(../images/image-mockups.png), url(../images/bg-intro-mobile.svg);
+        background-position: top -80px left 40px, left 0px top -40px;
+        background-size: 450px 450px, 600px 600px;
+        height: auto;
+        padding-left: 0px;
+        padding-top: 400px;
     }
 
-    nav li a {
-        margin: 0;
+    .reason {
+        height: auto;
+        text-align: center;
+    }
+
+    .grid-container {
+        align-items: center;
+        grid-template-columns: 100%;
+        height: auto;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .lst-articles {
+        height: auto;
+        text-align: center;
+    }
+
+    .grid-2-images {
+        margin-top: 15px;
+    }
+
+    .footer {
+        grid-template-columns: 100%;
+        height: auto;
     }
 }

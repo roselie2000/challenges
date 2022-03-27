@@ -1,0 +1,80 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, 
+body {
+    background-color: gray;
+    box-sizing: border-box;
+    height: 100vh;
+    margin: 0px;
+    overflow: hidden;
+    padding: 0px;
+    width: 100vw;
+}
+
+.grid-container {
+    align-items: center;
+    background-color: aliceblue;
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 27% 27% 27%;
+    height: 30%;
+    justify-content: center;
+    margin-left: 35%;
+    margin-top: 150px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    row-gap: 6.8%;
+    width: 30%;
+}
+
+.grid-container > div {
+    align-items: center;
+    background-color: yellow;
+    display: inline-block;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    font-weight: bolder;
+    height: 100%;
+    outline: none;
+    width: 100%;
+}
+
+#from-currency,
+#to-currency {
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    font-weight: bolder;
+    height: 100%;
+    outline: none;
+    text-align: center;
+    width: 100%;
+}
+
+p {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.value input::placeholder {
+    color: black;
+    font-size: 18px;
+    font-weight: bolder;
+    text-align: center;
+}

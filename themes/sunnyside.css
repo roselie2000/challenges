@@ -57,13 +57,13 @@ nav a{
   display: flex;
   justify-content: flex-end;
   overflow: hidden;
+  position: static;
   width: 90%;
 }
 
 .topnav a {
   color: white;
-  display: block;
-  float: left;
+  display: inline-block;
   font-size: 17px;
   padding: 14px 16px;
   text-align: center;
@@ -365,7 +365,33 @@ nav a{
   }
 
   .topnav {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 150px;
+    width: 80%;
+  }
+
+  .topnav a {
+    color: hsl(212, 27%, 19%);
+    display: block;
+    font-family: 'Barlow', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  .topnav button {
+    background-color: yellow;
+    color: hsl(212, 27%, 19%);
+  }
+
+  .hide {
     display: none;
+  }
+
+  .icon {
+    display: block;
   }
 
   nav {

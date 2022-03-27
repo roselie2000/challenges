@@ -208,6 +208,7 @@ h3 {
     height: 650px;
     width: 100%;
 }
+
 .head {
     padding-bottom: 30px;
     padding-top: 30px;
@@ -252,7 +253,9 @@ h3 {
     width: 90%;
 }
 
-.chrome, .firefox, .opera {
+.chrome, 
+.firefox, 
+.opera {
     background-color: white;
     background-image: url(../images/bg-dots.svg);
     background-position-y: 200px;
@@ -349,8 +352,8 @@ span {
 }
 
 .signup input[type=text] {
-    background-repeat: no-repeat;
     background-position: top 5px right 10px;
+    background-repeat: no-repeat;
     background-size: 15px 15px;
     border: 0px solid;
     border-radius: 5px;
